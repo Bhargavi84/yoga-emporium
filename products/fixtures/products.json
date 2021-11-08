@@ -1,0 +1,262 @@
+[
+    {
+       "pk":1,
+       "model":"products.product",
+       "fields":{
+          "sku":"ye2021001",
+          "name":"Buddha Meditation Idol",
+          "description":"Make your yoga practice more calm with this Buddha idol",
+          "price":23.99,
+          "category":7,
+          "rating":4.6,
+          "image":"buddha-meditation-idol.jpg"
+       }
+    },
+    {
+       "pk":2,
+       "model":"products.product",
+       "fields":{
+          "sku":"ye2021002",
+          "name":"Frog Meditation Idol",
+          "description":"Frog meditating",
+          "price":18.99,
+          "category":4,
+          "rating":4.5,
+          "image":"frog-meditation-idol.jpg"
+       }
+    },
+    {
+       "pk":3,
+       "model":"products.product",
+       "fields":{
+          "sku":"ye2021003",
+          "name":"Kids Yoga Pants&Shirts",
+          "description":"Kids Yoga Pants&Shirts",
+          "price":25.99,
+          "category":1,
+          "rating":4.7,
+          "image":"kids-yoga-pants&shirts.jpg"
+       }
+    },
+    {
+       "pk":4,
+       "model":"products.product",
+       "fields":{
+          "sku":"ye2021004",
+          "name":"Meditation Statue",
+          "description":"Meditation Statue",
+          "price":19.99,
+          "category":3,
+          "rating":4.0,
+          "image":"meditation-statue.jpg"
+       }
+    },
+    {
+       "pk":5,
+       "model":"products.product",
+       "fields":{
+          "sku":"ye2021005",
+          "name":"Yoga Advanced Kit",
+          "description":"Yoga Advanced Kit",
+          "price":42.99,
+          "category":4,
+          "rating":5.0,
+          "image":"yoga-advanced-kit.jpg"
+       }
+    },
+    {
+       "pk":6,
+       "model":"products.product",
+       "fields":{
+          "sku":"ye2021006",
+          "name":"Yoga Belts",
+          "description":"Yoga Belts",
+          "price":9.99,
+          "category":8,
+          "rating":2.7,
+          "image":"yoga-belts.jpg"
+       }
+    },
+    {
+       "pk":7,
+       "model":"products.product",
+       "fields":{
+          "sku":"ye2021007",
+          "name":"Yoga Blocks",
+          "description":"Yoga Blocks",
+          "price":6.99,
+          "category":5,
+          "rating":4.4,
+          "image":"yoga-blocks.jpg"
+       }
+    },
+    {
+       "pk":8,
+       "model":"products.product",
+       "fields":{
+          "sku":"ye2021008",
+          "name":"Yoga Blocks Multicolor",
+          "description":"Yoga Blocks Multicolor",
+          "price":15.99,
+          "category":2,
+          "rating":4.5,
+          "image":"yoga-blocks-multicolor.jpg"
+       }
+    },
+    {
+       "pk":9,
+       "model":"products.product",
+       "fields":{
+          "sku":"ye2021009",
+          "name":"Yoga Bolsters",
+          "description":"Yoga Bolsters",
+          "price":20.99,
+          "category":5,
+          "rating":4.7,
+          "image":"yoga-bolsters.jpg"
+       }
+    },
+    {
+       "pk":10,
+       "model":"products.product",
+       "fields":{
+          "sku":"ye2021010",
+          "name":"Yoga Essential Oil",
+          "description":"Yoga Essential Oil",
+          "price":33.99,
+          "category":5,
+          "rating":4.4,
+          "image":"yoga-essential-oil.jpg"
+       }
+    },
+    {
+       "pk":11,
+       "model":"products.product",
+       "fields":{
+          "sku":"ye2021011",
+          "name":"Yoga Mat Nonskid",
+          "description":"Yoga Mat Nonskid",
+          "price":49.99,
+          "category":8,
+          "rating":5.0,
+          "image":"yoga-mat-nonskid.jpg"
+       }
+    },
+    {
+       "pk":12,
+       "model":"products.product",
+       "fields":{
+          "sku":"ye2021012",
+          "name":"Yoga Mat",
+          "description":"Yoga Mat",
+          "price":19.99,
+          "category":2,
+          "rating":4.6,
+          "image":"yoga-mat.jpg"
+       }
+    },
+    {
+       "pk":13,
+       "model":"products.product",
+       "fields":{
+          "sku":"ye2021013",
+          "name":"Yoga Pants Ladies",
+          "description":"Yoga Pants Ladies",
+          "price":30.0,
+          "category":6,
+          "rating":3.2,
+          "image":"yoga-pants-ladies.jpg"
+       }
+    },
+    {
+       "pk":14,
+       "model":"products.product",
+       "fields":{
+          "sku":"ye2021014",
+          "name":"Yoga Pants Men",
+          "description":"Yoga Pants Men",
+          "price":26.99,
+          "category":6,
+          "rating":4.7,
+          "image":"yoga-pants-men.jpg"
+       }
+    },
+    {
+       "pk":15,
+       "model":"products.product",
+       "fields":{
+          "sku":"ye2021015",
+          "name":"Yoga Shirts Ladies",
+          "description":"Yoga Shirts Ladies",
+          "price":18.99,
+          "category":9,
+          "rating":4.8,
+          "image":"yoga-shirts-ladies.jpg"
+       }
+    },
+    {
+       "pk":16,
+       "model":"products.product",
+       "fields":{
+          "sku":"ye2021016",
+          "name":"Yoga Starter Kit",
+          "description":"Yoga Starter Kit",
+          "price":65.99,
+          "category":8,
+          "rating":4.4,
+          "image":"yoga-starter-kit.jpg"
+       }
+    },
+    {
+       "pk":17,
+       "model":"products.product",
+       "fields":{
+          "sku":"ye2021017",
+          "name":"Yoga Tank Tops",
+          "description":"Yoga Tank Tops",
+          "price":13.99,
+          "category":9,
+          "rating":4.4,
+          "image":"yoga-tank-tops.jpg"
+       }
+    },
+    {
+       "pk":18,
+       "model":"products.product",
+       "fields":{
+          "sku":"ye2021018",
+          "name":"Yoga Unisex Pants",
+          "description":"Yoga Unisex Pants",
+          "price":29.99,
+          "category":6,
+          "rating":4.8,
+          "image":"yoga-unisex-pants.jpg"
+       }
+    },
+    {
+       "pk":19,
+       "model":"products.product",
+       "fields":{
+          "sku":"ye2021019",
+          "name":"Yoga Unisex Shirts",
+          "description":"Yoga Unisex Shirts",
+          "price":20.99,
+          "category":9,
+          "rating":5.0,
+          "image":"yoga-unisex-shirts.jpg"
+       }
+    },
+    {
+        "pk":20,
+        "model":"products.product",
+        "fields":{
+           "sku":"ye2021020",
+           "name":"Yoga Strechable pants",
+           "description":"Yoga Strechable pants",
+           "price":29.99,
+           "category":9,
+           "rating":5.0,
+           "image":"yoga-strechable-pants.jpg"
+        }
+     }
+]
