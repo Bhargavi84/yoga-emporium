@@ -213,7 +213,7 @@
        "fields":{
           "sku":"ye2021017",
           "name":"Yoga Regular Tops",
-          "description":"Yoga RegularTops",
+          "description":"Yoga regular tops, can be used everyday for yoga practice. Very comfortable and strechable",
           "price":13.99,
           "category":9,
           "rating":4.4,
@@ -258,5 +258,31 @@
            "rating":5.0,
            "image":"yoga-strechable-pants.jpg"
         }
-     }
+     },
+     {
+      "pk":21,
+      "model":"products.product",
+      "fields":{
+         "sku":"ye2021021",
+         "name":"Yoga Mat Purple",
+         "description":"This yoga mat is very comfortable,easy to fold, non-skid and has good durability",
+         "price":20.99,
+         "category":2,
+         "rating":5.0,
+         "image":"purple-yoga-mat.jpg"
+      }
+   },
+   {
+      "pk":22,
+      "model":"products.product",
+      "fields":{
+         "sku":"ye2021022",
+         "name":"Yoga Santa Meditation",
+         "description":"This is a cute little santa meditating idol, Hurry up! buy for this christmas",
+         "price":20.99,
+         "category":3,
+         "rating":5.0,
+         "image":"purple-yoga-mat.jpg"
+      }
+   }
 ]
