@@ -35,7 +35,7 @@
           "price":25.99,
           "category":1,
           "rating":4.7,
-          "image":"kids-yoga-pants&shirts.jpg"
+          "image":"kids-yoga-pants_shirts_clearance.jpg"
        }
     },
     {
@@ -212,12 +212,12 @@
        "model":"products.product",
        "fields":{
           "sku":"ye2021017",
-          "name":"Yoga Tank Tops",
-          "description":"Yoga Tank Tops",
+          "name":"Yoga Regular Tops",
+          "description":"Yoga RegularTops",
           "price":13.99,
           "category":9,
           "rating":4.4,
-          "image":"yoga-tank-tops.jpg"
+          "image":"yoga-regular-tops.jpg"
        }
     },
     {
