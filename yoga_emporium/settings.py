@@ -62,7 +62,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'yoga_emporium.urls'
 
-CRISPY_FORMS = 'boostrap4'
+CRISPY_FORMS = 'bootstrap4'
 
 TEMPLATES = [
     {
