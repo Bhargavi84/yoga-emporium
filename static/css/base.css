@@ -8,6 +8,10 @@ body{
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Manrope', sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 /* from Bootstrap Bulma */
@@ -184,6 +188,54 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
+/*---------------------Footer--------------*/
+
+#footer {
+	width: 100%  !important;
+	bottom: 0;
+	padding: 0;
+	position:relative;
+	background-color:#686464e7;
+}
+
+.footer-items {
+	width: 60%;
+	margin: 0 auto;
+	padding: 0;
+	
+}
+
+
+ul.social {
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0;
+	font-size: 1.4rem;
+	display: inline-flex;
+}
+
+ul.social li a i {
+	color: white;
+	transition: all 0.4s ease-out;
+	padding: 0 0 0 2rem;
+	margin: 0;
+	
+	
+}
+
+.social li a i:hover {
+	color: #F62A00;
+	
+	
+}
+
+.copyright {
+	text-decoration: none;
+	color: #fff;
+	margin: 0;
+	font-size: 1.4rem;
+
+}
 
 /* -------------------------------- Media Queries */
 

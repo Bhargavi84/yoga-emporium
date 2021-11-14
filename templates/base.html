@@ -70,7 +70,7 @@
             <li class="list-inline-item dropdown">
                 <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <div class="text-center">
-                      <div><i class="fas fa-user fa-lg"></i></div>
+                      <div><i class="fas fa-user fa-lg"></i><i class="fas fa-caret-down"></i></div>
                       <p class="my-0">My Account</p>
                   </div>
               </a>
@@ -148,16 +148,47 @@
 
       {% block content %}
       {% endblock %}
-
-      {% block postloadjs %}
-      <script type ="text/javascript">
-        $('.toast').toast('show');
-      </script>
-      {% endblock %}
+           
+      {% block page_footer %}
+      <!-- Footer -->
       
-    
+      <div id="footer">
+        <footer>
+          <div class="container ">
+            <div class="row footer-items">
+              <div class="col-12 text-center">
+                <ul class="social">
+                  <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-facebook" aria-hidden="true"></i><span class="sr-only">Facebook</span></a></li>
+                  <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-instagram" aria-hidden="true"></i><span class="sr-only">Instagram</span></a></li>
+                  <li><a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Twitter</span></a></li>
+                  <li><a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-pinterest" aria-hidden="true"></i><span class="sr-only">Pinterest</span></a></li>
+                </ul>
+                <br>
+                <p class="copyright"><small>&copy; Copyright 2021 Yoga Emporium </small></p>
+                </div>
+              </div>
+            </div>
+          </footer>
+          </div>
+        
 
-   
+        <!-- Footer end-->
+        {% endblock %}
+    
+  {% block postloadjs %}
+  <script>
+      // Toast dismiss function
+      $('.toast-close').click(function () {
+          document.querySelector('.toast').style.display = "none";
+      });
+  </script>
+  {% endblock %}
+
+    </div>
    
   </body>
 </html>

@@ -121,13 +121,15 @@
                         </table>
                 </div>
             {% else %}
-                <p class="lead mb-5">Your bag is empty.</p>
-                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
-                    <span class="icon">
-                        <i class="fas fa-chevron-left"></i>
-                    </span>
-                    <span class="text-uppercase">Keep Shopping</span>
-                </a>
+            <p class="lead test-center mb-2">Your bag is currently empty.
+            </p>    
+            <div class="jumbotron mt-1">
+                <h1 class="display-4">Hello, there!</h1>
+                <p class="lead">Comfortable clothing is as important as a yoga mat. While fashion and sense of style is not a top priority while practicing yoga, it is simply an added benefit of yoga apparel.</p>
+                <hr class="my-4">
+                <p>Hurry up!!</p>
+                <a class="btn btn-secondary btn-lg" href="{% url 'products' %}" role="button"><i class="fas fa-chevron-left"></i> Go back to Shopping page</a>
+              </div>
             {% endif %}
         </div>
     </div>
