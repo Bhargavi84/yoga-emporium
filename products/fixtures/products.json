@@ -6,7 +6,7 @@
           "sku":"ye2021001",
           "name":"Buddha Meditation Idol",
           "description":"Make your yoga practice more calm with this Buddha idol",
-          "price":23.99,
+          "price":13.99,
           "category":7,
           "rating":4.6,
           "image":"buddha-meditation-idol.jpg"
@@ -57,7 +57,7 @@
        "fields":{
           "sku":"ye2021005",
           "name":"Yoga Advanced Kit",
-          "description":"Yoga Advanced Kit",
+          "description":"Yoga Advanced Kit which includes all yoga essentials",
           "price":42.99,
           "category":4,
           "rating":5.0,
@@ -97,7 +97,7 @@
           "sku":"ye2021008",
           "name":"Yoga Blocks Multicolor",
           "description":"Yoga Blocks Multicolor",
-          "price":15.99,
+          "price":25.99,
           "category":2,
           "rating":4.5,
           "image":"yoga-blocks-multicolor.jpg"
@@ -110,7 +110,7 @@
           "sku":"ye2021009",
           "name":"Yoga Bolsters",
           "description":"Yoga Bolsters",
-          "price":20.99,
+          "price":10.99,
           "category":5,
           "rating":4.7,
           "image":"yoga-bolsters.jpg"
@@ -123,7 +123,7 @@
           "sku":"ye2021010",
           "name":"Yoga Essential Oil",
           "description":"Yoga Essential Oil",
-          "price":33.99,
+          "price":17.99,
           "category":5,
           "rating":4.4,
           "image":"yoga-essential-oil.jpg"
@@ -148,8 +148,8 @@
        "fields":{
           "sku":"ye2021012",
           "name":"Yoga Mat",
-          "description":"Yoga Mat",
-          "price":19.99,
+          "description":"Non skid and Durable",
+          "price":30.99,
           "category":2,
           "rating":4.6,
           "image":"yoga-mat.jpg"
@@ -161,8 +161,8 @@
        "fields":{
           "sku":"ye2021013",
           "name":"Yoga Pants Ladies",
-          "description":"Yoga Pants Ladies",
-          "price":30.0,
+          "description":"Yoga Pants for ladies is comfortable and strechable",
+          "price":20.50,
           "category":6,
           "rating":3.2,
           "image":"yoga-pants-ladies.jpg"
@@ -174,7 +174,7 @@
        "fields":{
           "sku":"ye2021014",
           "name":"Yoga Pants Men",
-          "description":"Yoga Pants Men",
+          "description":"Yoga Pants for Men is comfortable and strechable",
           "price":26.99,
           "category":6,
           "rating":4.7,
@@ -187,7 +187,7 @@
        "fields":{
           "sku":"ye2021015",
           "name":"Yoga Shirts Ladies",
-          "description":"Yoga Shirts Ladies",
+          "description":"Yoga Shirts for Ladies is comfortable and strechable",
           "price":18.99,
           "category":9,
           "rating":4.8,
@@ -200,7 +200,7 @@
        "fields":{
           "sku":"ye2021016",
           "name":"Yoga Starter Kit",
-          "description":"Yoga Starter Kit",
+          "description":"Yoga Starter Kit is complete package of yoga essentials",
           "price":65.99,
           "category":8,
           "rating":4.4,
@@ -226,8 +226,8 @@
        "fields":{
           "sku":"ye2021018",
           "name":"Yoga Unisex Pants",
-          "description":"Yoga Unisex Pants",
-          "price":29.99,
+          "description":"Men and women pants are very good material and works for all workouts",
+          "price":20.99,
           "category":6,
           "rating":4.8,
           "image":"yoga-unisex-pants.jpg"
@@ -239,7 +239,7 @@
        "fields":{
           "sku":"ye2021019",
           "name":"Yoga Unisex Shirts",
-          "description":"Yoga Unisex Shirts",
+          "description":"Men and women shirts are very good material and works for all workouts",
           "price":20.99,
           "category":9,
           "rating":5.0,
@@ -252,8 +252,8 @@
         "fields":{
            "sku":"ye2021020",
            "name":"Yoga Strechable pants",
-           "description":"Yoga Strechable pants",
-           "price":29.99,
+           "description":"Yoga Strechable pants are most comfy and flexible",
+           "price":22.99,
            "category":9,
            "rating":5.0,
            "image":"yoga-strechable-pants.jpg"
@@ -268,7 +268,7 @@
          "description":"This yoga mat is very comfortable,easy to fold, non-skid and has good durability",
          "price":20.99,
          "category":2,
-         "rating":5.0,
+         "rating":4.0,
          "image":"purple-yoga-mat.jpg"
       }
    },
@@ -279,10 +279,49 @@
          "sku":"ye2021022",
          "name":"Yoga Santa Meditation",
          "description":"This is a cute little santa meditating idol, Hurry up! buy for this christmas",
-         "price":20.99,
+         "price":10.99,
          "category":3,
-         "rating":5.0,
+         "rating":3.0,
          "image":"yoga-santa-meditation.jpg"
+      }
+   },
+   {
+      "pk":23,
+      "model":"products.product",
+      "fields":{
+         "sku":"ye2021023",
+         "name":"Yoga Magic Bowl",
+         "description":"The sound of magic bowl makes you calm and relaxed",
+         "price":20.99,
+         "category":8,
+         "rating":5.0,
+         "image":"yoga-magic-bowl-new-arrival.jpg"
+      }
+   },
+   {
+      "pk":24,
+      "model":"products.product",
+      "fields":{
+         "sku":"ye2021024",
+         "name":"Yoga Incence Sticks",
+         "description":"The incence frangrance makes you more calm and relaxed",
+         "price":10.99,
+         "category":8,
+         "rating":4.0,
+         "image":"yoga-incence-stick-clearance.jpg"
+      }
+   },
+   {
+      "pk":25,
+      "model":"products.product",
+      "fields":{
+         "sku":"ye2021025",
+         "name":"Yoga Smart Watch",
+         "description":"Keeps track of Heart rate, Stress level and SpO2",
+         "price":46.99,
+         "category":4,
+         "rating":5.0,
+         "image":"yoga_smart_watch_new_arrival.jpg"
       }
    }
 ]
