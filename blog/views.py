@@ -1,10 +1,9 @@
-from django.shortcuts import render, get_object_or_404
 from .models import Post
 from .forms import CommentForm
-
-# Create your views here.
+from django.shortcuts import render, get_object_or_404
 
 def view_blog(request):
-    """ A view that renders the bag contents page """
+    """ A view to return to index page """
 
     return render(request, 'blog/blog.html')
+
