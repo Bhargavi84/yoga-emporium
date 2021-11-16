@@ -300,6 +300,14 @@ input[name='q']::placeholder {
     }
 }
 
+/* Blog side bar */
+
+.card{
+    box-shadow: 0 16px 48px #E3E7EB;
+}
+
+
+
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
