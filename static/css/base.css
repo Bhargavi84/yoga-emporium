@@ -31,6 +31,10 @@ body{
     width: fit-content;
 }
 
+i.fa-thumbs-up{
+    font-size: 1.5rem;
+}
+
 .shop-here-button {
     background: rgb(83, 80, 80);
     color:  white;
@@ -188,54 +192,6 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
-/*---------------------Footer--------------*/
-
-#footer {
-	width: 100%  !important;
-	bottom: 0;
-	padding: 0;
-	position:relative;
-	background-color:#686464e7;
-}
-
-.footer-items {
-	width: 60%;
-	margin: 0 auto;
-	padding: 0;
-	
-}
-
-
-ul.social {
-	list-style-type: none;
-	margin: 0 auto;
-	padding: 0;
-	font-size: 1.4rem;
-	display: inline-flex;
-}
-
-ul.social li a i {
-	color: white;
-	transition: all 0.4s ease-out;
-	padding: 0 0 0 2rem;
-	margin: 0;
-	
-	
-}
-
-.social li a i:hover {
-	color: #F62A00;
-	
-	
-}
-
-.copyright {
-	text-decoration: none;
-	color: #fff;
-	margin: 0;
-	font-size: 1.4rem;
-
-}
 
 /* -------------------------------- Media Queries */
 
@@ -355,6 +311,7 @@ ul.social li a i {
     }
     .display-4.logo-font.text-black {
         font-size: 2rem;
+        text-transform: uppercase;
     }
 
     .nav-link {
@@ -364,7 +321,12 @@ ul.social li a i {
     .nav-link i.fa-lg {
         font-size: 1rem;
     }
-
+    #user-options {
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
     .navbar-toggler {
         padding: .6rem .6rem;
         font-size: 1rem;
@@ -387,5 +349,12 @@ ul.social li a i {
 
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
+    }
+
+    h1 {
+        font-size: 1.25rem;
+        margin-top: 100px;
+        margin-left: 50px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 }
