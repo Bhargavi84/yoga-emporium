@@ -1,9 +1,9 @@
 html {
-    height:100%;
+    height: 100%;
 }
 
-body{
-    background: url('/media/homepage-background-cropped.jpg') no-repeat center  center fixed;
+body {
+    background: url('/media/homepage-background-cropped.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -31,13 +31,13 @@ body{
     width: fit-content;
 }
 
-i.fa-thumbs-up{
+i.fa-thumbs-up {
     font-size: 1.5rem;
 }
 
 .shop-here-button {
     background: rgb(83, 80, 80);
-    color:  white;
+    color: white;
     min-width: 260px;
 }
 
@@ -48,7 +48,8 @@ i.fa-thumbs-up{
 
 .btn-outline-black {
     background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
+    color: black !important;
+    /* use important to override link colors for <a> elements */
     border: 1px solid black;
 }
 
@@ -84,21 +85,22 @@ i.fa-thumbs-up{
 }
 
 .overlay {
-        height:100%;
-        width: 100%;
-        top:0;
-        left:0;
-        position:fixed;
-        background:white;
-        z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
 }
+
 .card-img-top {
     width: 100%;
     height: 15vw;
     object-fit: cover;
 }
 
-a.category-badge > span.badge:hover {
+a.category-badge>span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
 }
@@ -113,7 +115,7 @@ a.category-badge > span.badge:hover {
 
 .btt-link,
 .update-link,
-.remove-item  {
+.remove-item {
     cursor: pointer;
 }
 
@@ -143,10 +145,10 @@ input[name='q']::placeholder {
 /* From Boutique Ado project */
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 4px solid transparent;
-    border-right: 4px solid transparent; 
+    border-right: 4px solid transparent;
     border-bottom: 10px solid black;
     position: absolute;
     top: -10px;
@@ -197,16 +199,18 @@ input[name='q']::placeholder {
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
+    .container {
+        max-width: 80%;
+    }
 }
 
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
-    margin-top: 1.5rem; /* mt-4 */
-    color: #6c757d; /* text-secondary */
+    margin-top: 1.5rem;
+    /* mt-4 */
+    color: #6c757d;
+    /* text-secondary */
 }
 
 .allauth-form-inner-content input {
@@ -224,8 +228,8 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content button,
 .allauth-form-inner-content input[type='submit'] {
-	/* btn */
-	display: inline-block;
+    /* btn */
+    display: inline-block;
     font-weight: 400;
     color: #fff;
     text-align: center;
@@ -242,18 +246,19 @@ input[name='q']::placeholder {
     border-radius: 0;
 
     /* standard bootstrap btn transitions */
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type='submit']:hover {	
-	color: #fff;
+.allauth-form-inner-content input[type='submit']:hover {
+    color: #fff;
     background-color: #222;
     border-color: #222;
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+    color: #17a2b8;
+    /* text-info */
 }
 
 /* Product Form */
@@ -302,7 +307,7 @@ input[name='q']::placeholder {
 
 /* Blog side bar */
 
-.card{
+.card {
     box-shadow: 0 16px 48px #E3E7EB;
 }
 
@@ -317,6 +322,7 @@ input[name='q']::placeholder {
     body {
         height: calc(100vh - 116px);
     }
+
     .display-4.logo-font.text-black {
         font-size: 2rem;
         text-transform: uppercase;
@@ -329,12 +335,13 @@ input[name='q']::placeholder {
     .nav-link i.fa-lg {
         font-size: 1rem;
     }
+
     #user-options {
         font-size: 1rem;
         text-transform: uppercase;
         font-weight: bold;
     }
-    
+
     .navbar-toggler {
         padding: .6rem .6rem;
         font-size: 1rem;
@@ -355,7 +362,8 @@ input[name='q']::placeholder {
         font-size: .75rem;
     }
 
-    .increment-qty, .decrement-qty {
+    .increment-qty,
+    .decrement-qty {
         padding: .25rem .5rem !important;
     }
 
@@ -363,6 +371,6 @@ input[name='q']::placeholder {
         font-size: 1.25rem;
         margin-top: 100px;
         margin-left: 50px;
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 }

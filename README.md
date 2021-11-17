@@ -120,7 +120,7 @@ Admin page will have **Home, Profile, New recipe, Manage Categories and Logout**
 ![plot](static/images/db-diagram.png)
 
 ## **Surface**
-### Background
+### Background Image
 ___
 
 Below image has been used as background image on the landing page in the project.
@@ -444,7 +444,9 @@ Press Enter , your local clone will be created.
 
     * Create a Procfile (strictly capital P and no file extension!) - required by Heroku, to know which file runs the app.
 
-    *       web: gunicorn yoga_emporium.wsgi:application
+    *          pip3 install gunicorn
+
+    *          web: gunicorn yoga_emporium.wsgi:application 
     
 * **Create application in Heroku**:
 
@@ -455,11 +457,11 @@ Press Enter , your local clone will be created.
 
 * **S3 Bucket Creation using AWS**
 
-* AWS is Amazon’s cloud-based storage service was used to store this project's static and image files.
-    * Create an account if you dont have one already. Click on "Create new aws account" follow instructions.
+* AWS is Amazon’s cloud-based storage service is used to store this project's static and image files.
+    * Create an account if you don't have one already. Click on "Create new aws account" follow instructions.
     * Once login is created, Navigate to the AWS management console.
     * In the search bar search s3, this can be found in the services section. Open s3 and create a new bucket.
-    * Enter the name of your bucket (projects name). Select the region that is closest to you.
+    * Enter the name of your bucket (to keep things consistant give the name which matches your respective project).Select the region that is closest to you.
     * Uncheck block public access box. Then click create bucket.
     * Once you have created the bucket, click on the bucket, and enter the following details-
         * Under Properties, turn on static website hosting
@@ -521,21 +523,6 @@ Press Enter , your local clone will be created.
 * The app is now connected and Heroku will receive the code from GitHub and will access the static files and media files using S3 bucket from AWS and automatically updates whenever changes is pushed to the GitHub repository. You should be able to see "Your app was successfully deployed!". Click on View to launch your app.
 * Click on Open App to test your deployed website.
 
-
-
-### **Creating env file**
-
-Install Flask, in the terminal type pip3 install Flask , this will install Flask functionality. Create env.py file for storing sensitive data, type touch env.py in terminal. This file should never be pushed to GitHub, so type touch .gitignore to ignore it. Then open the .gitignore file and ignore your env.py file type:
-
-![plot](static/images/gitignore.png)
-
-
-
-
-In the env.py file we need to hide several bits of data. Open env.py file and type:
-
-![plot](static/images/env.png)
-
 ## **Fork the project**
 
 * To create a personal copy of this repository, click on Fork button on the top right corner of the repository page in GitHub.
@@ -561,15 +548,13 @@ In the env.py file we need to hide several bits of data. Open env.py file and ty
 ____
 
 * Inspiration by Boutique Ado Project from Code Institute.
-* The below script was borrowed from code institute's mini project.
-
-:arrow_up:[Back-to-top](#contents)
+* AWS section in Readme ideas credits to lawrence-collections-ms4.
 
 ### Design
 ___
 
 * Design Inspiration from Boutique Ado project
-* Social links idea credits to lawrence-collections-ms4.
+* Social links and credits to lawrence-collections-ms4.
 
 
 ## References
@@ -583,8 +568,8 @@ ___
 * https://www.youtube.com/watch?v=CnaB4Nb0-R8
 
 ## Media
-
 ___
+
 * The Images for this project was downloaded from the below websites. 
 
 * https://burst.shopify.com/yoga 
@@ -592,7 +577,6 @@ ___
 * https://unsplash.com/s/photos/yoga-pants
 * https://www.freepik.com/free-photos-vectors/yoga-mat
 * https://www.pexels.com/search/yoga/
-
 
 ## Acknowledgements
 ___
