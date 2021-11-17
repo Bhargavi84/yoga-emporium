@@ -120,41 +120,40 @@ Admin page will have **Home, Profile, New recipe, Manage Categories and Logout**
 ![plot](static/images/db-diagram.png)
 
 ## **Surface**
-### Color palette
+### Background
 ___
+
+Below image has been used as background image on the landing page in the project.
+* Provides the user with a clear and consistent visual structure, which clearly indicates relationships between elements on the screen, improves navigation, and the order of importance of elements that matches user's expectations. 
+* Communicates what user expects, what information or value that users want to get, and considers user capabilities.
+
+### Font
+ * Manrope, san-serif font has been used all over the project.
+ * Cambria, Cochin, Georgia, Times, 'Times New Roman', serif is used only in media queries for h5 logo font.
 
 ![plot](static/images/color-palette.png)
 
 ___
 
-* **Timeless Nautical** color palette has been used for this website.
-
-* #00293C **Navy** - used for Navbar and Footer.
-
-* #F1F3CE **Ivory** - used for the Background color of the  body.
-
-* #1E656D **Peacock Blue** - used for Buttons: Show more, Search, Add Recipe, Edit Recipe, Add Category, Edit Category.
-
-* #F62A00 **Candy Apple** - used for the Flash Messages, Reset button, Delete buttons and Hover.
 
 :arrow_up:[Back-to-top](#contents)
 
-# **Technologies Used**
+# **Technologies and Frameworks Used**
 
 * [Python3](https://www.python.org/)
-    * [Flask](https://flask.palletsprojects.com/en/1.1.x/tutorial/layout/) - Python framework was used all project. Flask depends on the Jinja template engine and the Werkzeug WSGI toolkit.
-    * [PyMongo](https://pymongo.readthedocs.io/en/stable/) - is a Python tools, used for working with MongoDB.
-    * [Werkzeug](https://werkzeug.palletsprojects.com/en/1.0.x/utils/#module-werkzeug.security) - used for password security.
     * [Jinja](https://jinja.palletsprojects.com/en/3.0.x/) - used  with python for  working of the website
-* [MongoDB](https://www.mongodb.com/) - database was used to storing and retrieving information in the website.
+    * **Django** - Python web framework for building apps.
 * **HTML** - used for creating the website.
 * **CSS** - used for styling the website.
-* [jQuery](https://jquery.com/) - used for confirmation messages and interactive design, also initialise MaterializeCSS components.
-* [MaterializeCSS](https://materializecss.com/)- used to create responsive design, grid system, buttons, navbar, sidenav, dropdown, modal, cards, forms.
+* **Bootstrap** - used to support javascript extensions.
+* **Javascript** - used for allauth messages.
+* **JSON** - used for products and categories format storage.
+* [jQuery](https://jquery.com/) - used for confirmation messages and interactive design.
 * [balsamiq](https://balsamiq.com/wireframes/) - used to create wireframes.
 * [Gitpod](https://www.gitpod.io/) - used to built all project.
 * [GitHub](https://github.com/) - used to hosting the website.
 * [Heroku](https://id.heroku.com/) - used to deploy the website.
+
 
 :arrow_up:[Back-to-top](#contents)
 
@@ -416,61 +415,110 @@ ___
 
 
 # **Deployment**
-* This website is developed by using Gitpod workspace  and GitHub repository to commit and push changes. This project uses GitHub for hosting and has been deployed using Heroku. 
+* This website is developed by using Gitpod workspace and GitHub repository to commit and push changes. This project uses GitHub for hosting and has been deployed using Heroku and also Amazon S3 for storing the media files.
 
 * Following steps can be used to access the page :-
 
 
 ### **Download**
-* Git hub navigate to https://github.com/Bhargavi84/The-Cook-Book
+* Git hub navigate to https://github.com/Bhargavi84/yoga-emporium
 * Click the **Code** button.
 * Click the **Download Zip**.
 * Extract 
 
 ### **Clone Repository**
 
-* GitHub navigate to https://github.com/Bhargavi84/The-Cook-Book
+* GitHub navigate to https://github.com/Bhargavi84/yoga-emporium
 * Click the Code button.
-* To clone with HTTPS copy the URL in the box https://github.com/Bhargavi84/The-Cook-Book.git
+* To clone with HTTPS copy the URL in the box https://github.com/Bhargavi84/yoga-emporium.git
 * Open your Git Bash.
 * Changed the directory to the location where you want to clone.
-* Type git clone than paste the copied URL git clone https://github.com/Bhargavi84/The-Cook-Book.git
+* Type git clone than paste the copied URL git clone https://github.com/Bhargavi84/yoga-emporium.git
 Press Enter , your local clone will be created.
 
 ### **Deployment to Heroku**
 * **Set up workspace for Heroku**:
 
-    * In the terminal window of IDE, create a requirements.txt file to store all applications and dependencies required to run the app.
+    * In the terminal window of IDE, create a requirements.txt file to store all applications and dependencies required to run the project.
     *        pip3 freeze --local . requirements.txt
 
     * Create a Procfile (strictly capital P and no file extension!) - required by Heroku, to know which file runs the app.
 
-    *       echo web: python app.py > Procfile
+    *       web: gunicorn yoga_emporium.wsgi:application
     
 * **Create application in Heroku**:
 
     * Navigate to [Heroku website](https://dashboard.heroku.com/) and create an account.
     * Once logged in, click on the New button and select Create New App
     * Create a name for your app and select the region closest to your location.
+    * Get free Hobby dev Heroku Postgres
+
+* **S3 Bucket Creation using AWS**
+
+* AWS is Amazon’s cloud-based storage service was used to store this project's static and image files.
+    * Create an account if you dont have one already. Click on "Create new aws account" follow instructions.
+    * Once login is created, Navigate to the AWS management console.
+    * In the search bar search s3, this can be found in the services section. Open s3 and create a new bucket.
+    * Enter the name of your bucket (projects name). Select the region that is closest to you.
+    * Uncheck block public access box. Then click create bucket.
+    * Once you have created the bucket, click on the bucket, and enter the following details-
+        * Under Properties, turn on static website hosting
+        * Under Permissions, paste in the CORS configuration:
+
+        ![plot](static/images/) 
+
+* Navigate to bucket policy and select policy generator. This will create a security policy for the bucket.
+* Policy type will be s3 bucket policy, allow all principles by selecting the star. For action select get object.
+* Copy the ARN (Amazon resource name) from the bucket policy tab. Paste the copied ARN into the box at the bottom. Once added click Add Statement. Click Generate Policy, copy this policy into the bucket policy editor.
+* Do not click save yet. First allow access to all resources in the bucket. You can do this by add "/*" at the end of the resource key.
+* Go to access control list tab and set the list objects permission for everyone under the Public Access section.
+* Now that the s3 bucket is set up. You now need to create a user in order to access the bucket. To do this use another    Amazon service called IAM (identity and Access Management).
+* In the search box type in IAM and click on the result.
+* Click groups and create a new group. Do not worry about any of the tabs, click all the way through to create the group.
+* Create the policy to access the bucket by clicking policies and then create policy.
+* Navigate to the JSON tab, import managed policy, search for s3 and import S3 Full Access Policy.
+* Go back to the bucket policy page and copy the ARN, paste the ARN in the JSON section.
+* Click review policy, give the policy a name (project name + policy at the end) and a description, then click create policy.
+* Attach the policy to the group that was just created. Go to groups, manage my group, click attach policy, search for the policy that was just created and select it. Then click attach policy.
+* Create a user for the group. On the user's page, click add user, create a new user and give them programmatic access. Then select next.
+* Add newly created user to group. Download the CSV file, this file contains the users access key and secret access key. 
+* These keys are needed to authenticate the user from the Django app. MAKE SURE YOU SAFELY STORE THE CSV FILE, IT CAN NOT BE SEEN OR DOWNLOADED AGAIN
+* Connect Django to s3, you'll need to install 2 new packages :
+* pip3 install boto3
+* pip3 install django-storages
+* Freeze requirements.txt
+* pip3 freeze > requirements.txt
+* Add 'storages' to installed apps in settings.py file
+* To connect Django to s3, you'll need to add some parameters in settings.py to tell Django which bucket it is communicating with
+
+![plot](static/images/) 
+
+* Go to Heroku, in the convig vars, add USE_AWS = True. Add the AWS access key and secret access key
+* Remove disable collectstatic from Heroku config vars
+* Create a file called custom_storages.py
+* In settings.py add the following statements to tell Django where the static files will come form in production
+
+![plot](static/images/) 
+
+* Then git commit all changes
+
+
 
 * **Connect your app to GitHub repository**:
 
     * On the Deploy page, select GitHub as your Deployment method.
     * You will then be prompted to find the github repository, click on Connect button to connect.
+    * Choose a branch to deploy as main.
     * Click on the Settings  and select Config Vars and Reveal Config Vars.
-    * Add the following variables (as stored in env file):
+    * Add the following variables.
 
-    ![plot](static/images/env.png)
-In the IDE terminal, push the two new files to the GitHub repository:
+    ![plot](static/images/)
 
-        git add requirements.txt
-        git commit -m "Add requirements.txt"  
-        git add Procfile
-        git commit -m "Add Procfile"
-        git push
 * Now go back to Heroku and click on Enable Automatic Deployment and Deploy Branch.
 
-* The app is now connected and Heroku will receive the code from GitHub and automatically update whenever changes is pushed to the GitHub repository. You should be able to see "Your app was successfully deployed!". Click on View to launch your app.
+  * https://git.heroku.com/bhargavi84-yoga-emporium-ms4.git
+
+* The app is now connected and Heroku will receive the code from GitHub and will access the static files and media files using S3 bucket from AWS and automatically updates whenever changes is pushed to the GitHub repository. You should be able to see "Your app was successfully deployed!". Click on View to launch your app.
 * Click on Open App to test your deployed website.
 
 
@@ -493,28 +541,16 @@ In the env.py file we need to hide several bits of data. Open env.py file and ty
 * To create a personal copy of this repository, click on Fork button on the top right corner of the repository page in GitHub.
 
 ### **Database Access**
-To create the data schema in MongoDB Atlas, create a new database called cook_book, add three collections called 
-categories, recipes and users.
 
-###  cook_book 
-* categories
-    * _id:ObjectId
-    * category_name
-* recipes
-    * _id:ObjectId
-    * category_name
-    * recipe_name
-    * recipe_ingredients should be set into an array
-    * recipe_instruction should be set into an array
-    * recipe_img
-    * prep_time
-    * cook_time
-    * serves
-    * created_by
-* users
-    * _id:ObjectId
-    * username
-    * password
+* Heroku Postgres for production
+* sqLite3 for development
+* AWS S3 for static and media files
+
+* SQLite, by Django has been used for development. Heroku Postgres has been used for production. Amazon Web Services (AWS) has been used to host all my static and media files.
+
+### **Database Structure**
+
+![plot](static/images/)
 
 :arrow_up:[Back-to-top](#contents)
 
