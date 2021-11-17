@@ -28,8 +28,6 @@ body {
     
 }
 
-
-
 .main-logo-link {
     width: fit-content;
 }
@@ -374,6 +372,16 @@ input[name='q']::placeholder {
         font-size: 1.25rem;
         margin-top: 100px;
         margin-left: 50px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        
+    }
+
+    .card-img-top {
+        height: 35vh;
+        
+
+    }
+
+    .card {
+        width: 90%;
     }
 }
