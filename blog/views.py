@@ -1,4 +1,4 @@
-from .models import Post
+from django.views.decorators.http import require_POST
 from .forms import CommentForm
 from django.shortcuts import (
     render, redirect, reverse, HttpResponse, get_object_or_404
