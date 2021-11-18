@@ -161,13 +161,21 @@ ___
 
   ###  Existing Features
  ___
- * ### Navigation bar
- The nav bar feature is fixed in desktops and if resized turns into a hamburger icon in mobile and tablet screen and coresponding link will display from right side.
- * ### Home 
- The Home page feature have the search panel in which, it has two buttons Reset and Search.
- If user enters a word , it displays the results below the panel it takes data from recipe name, category_name and Ingredients list. otherwise it displays a message 'No Results Found'
- Reset button resets the value entered in search button and retrieve the home page.
+ * ### **Navigation bar**
+ The nav bar feature is fixed in desktops and if resized turns into a hamburger icon in mobile and tablet screen and coresponding link will display from left side.
 
+ * ### **Home / Landing page**
+ 
+ * The Home page feature have the search panel at the top.
+ If user enters a word , it displays the results below the panel it takes data from product name, and description. otherwise it displays a message '0 Products found for "name you have entered".
+ By clicking on "Yoga Emporium" logo font retrieves the home page.
+ * Menu - My profile, Clothing, Essntials, Special offers.
+ * Social media icon, when clicked, respective social link is opened in new tab.
+ * My Account Icon has profile and logout dropdown.
+ * Bag Icon 
+ * Blog Icon
+ * Shop Now button on the mid screen.
+ 
  * ### Profile
  The Profile page feature have the display of username on top of the page, also displays  user's recipe cards and has a show more button and when clicked it will take to show recipe page.
 
@@ -398,8 +406,8 @@ ___
 :arrow_up:[Back-to-top](#contents)
 
 * ### **Responsiveness**
-    The responsiveness of the website was tested physically on Laptops, Desktops, Big screen, Mobile, Tablets and also using Am I Responsive tool as well as Google Dev Tools Device Mode.
-    The website fits and adapts well to the different viewport size devices.
+    The responsiveness of the website was tested physically on Laptops, Desktops, Big screen, Mobile, Tablets.
+    The website fits and adapts fairly ok to the different viewport size devices.
     ![plot](static/images/responsive.png)
 * ### **Usability Testing**
     * This website have been shared to family and friends to add, read, edit and delete recipes none of them experienced any issues during the testing process and it was confirmed that the website was easy to use and navigate. They were able to effectively use the interactive elements of the website, find the information they were looking for and easily understand the purpose of the website. 

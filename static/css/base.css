@@ -23,9 +23,9 @@ body {
     width: 1.5rem;
 }
 
- .logo-font {
+.logo-font {
     text-transform: uppercase;
-    
+
 }
 
 .main-logo-link {
@@ -34,6 +34,15 @@ body {
 
 i.fa-thumbs-up {
     font-size: 1.5rem;
+}
+
+i.fa-blog {
+    font-size: 1.5rem;
+}
+
+nav.navbar {
+    background: rgb(221, 237, 241);
+
 }
 
 .shop-here-button {
@@ -289,6 +298,7 @@ input[name='q']::placeholder {
     .container {
         max-width: 80%;
     }
+
     .card {
         width: 100%;
     }
@@ -308,25 +318,41 @@ input[name='q']::placeholder {
         padding-top: 164px;
     }
 
-/* Blog side bar */
+    /* Blog side bar */
 
-.card {
-    box-shadow: 0 16px 48px #E3E7EB;
-}
+    .card {
+        box-shadow: 0 16px 48px #E3E7EB;
+    }
 
-h2 {
-    margin-top: 45px;
-    font-weight: bold;
-}
+    h2 {
+        margin-top: 45px;
+        font-weight: bold;
+    }
 
-.card-img-top {
-    height: 35vh;
-    
-}
+    .card-img-top {
+        height: 35vh;
 
-.card {
-    width: 100%;
-}
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .display-5.logo-font.text-black {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        margin-top: 20vh;
+    }
+
+    h2.logo-font.mb-4 {
+        margin-top: 85px;
+    }
+
+    h2.logo-font.mb-6 {
+        margin-top: 85px;
+    }
+
+
 
 }
 
@@ -342,8 +368,8 @@ h2 {
         height: calc(100vh - 116px);
     }
 
-    .display-4.logo-font.text-black {
-        font-size: 2rem;
+    h1.display-4.logo-font.text-black {
+        font-size: 1rem;
         text-transform: uppercase;
     }
 
@@ -390,16 +416,37 @@ h2 {
         font-size: 1.25rem;
         margin-top: 100px;
         margin-left: 50px;
-        
+
     }
+
+    h2 {
+        margin-top: 45px;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
     .card-img-top {
         height: 35vh;
-        
+
     }
-    
+
     .card {
         width: 100%;
     }
-    
+
+    .display-5.logo-font.text-black {
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        margin-top: 20vh;
+    }
+
+    h2.logo-font.mb-4 {
+        margin-top: 70px;
+    }
+
+    h2.logo-font.mb-6 {
+        margin-top: 85px;
+    }
+
 
 }
