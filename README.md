@@ -4,7 +4,7 @@
 ____
 # **About**
 ### 
-This is an ultimate E-commerce store for all yoga essentials like Mat, blocks belts and so on, where users can purchase the products.
+This is an ultimate E-commerce store for all yoga essentials like Mat, blocks, belts and so on, where users can view the details of products and purchase the products.
 ____
 
 :point_right:

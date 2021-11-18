@@ -53,3 +53,5 @@ def bag_contents(request):
     }
 
     return context
+
+

@@ -1,5 +1,5 @@
 from django.shortcuts import (
-    render, redirect, reverse, 
+    render, redirect, reverse,
     get_object_or_404, HttpResponse
 )
 from django.views.decorators.http import require_POST
@@ -61,7 +61,7 @@ def checkout(request):
             order.original_bag = json.dumps(bag)
             order.save()
             for item_id, item_data in bag.items():
-            
+
                 try:
                     product = Product.objects.get(id=item_id)
                     if isinstance(item_data, int):
@@ -91,7 +91,7 @@ def checkout(request):
                     return redirect(reverse('view_bag'))
 
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', 
+            return redirect(reverse('checkout_success',
                             args=[order.order_number]))
         else:
             messages.error(request, 'There was an error with your form. \
