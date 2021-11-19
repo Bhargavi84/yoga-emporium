@@ -45,6 +45,9 @@
       {% endfor %}
     </div>
   </div>
+
+  <div class="container">
+    <div class="row">
   <div class="col-md-8 card mb-4  mt-3 ">
     <div class="card-body">
       {% if new_comment %}
@@ -54,12 +57,17 @@
   {% else %}
   <h3>Leave a comment</h3>
   {% load crispy_forms_tags %}
-  <form action="#" method="post" id="contact-form">
+  <form method="post" id="contact-form">
     {{ comment_form | crispy }}
     {% csrf_token %}
+    <div class="form-group">
+      {{ form }}
+    </div>
     <button type="submit" class="btn btn-primary  btn-lg">Submit</button>
   </form>
   {% endif %}
   </div>
-
+  </div>
+  </div>
+ 
   {% endblock %}

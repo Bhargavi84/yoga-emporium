@@ -1,4 +1,6 @@
-from django.views.decorators.http import require_POST
+from .models import Post
+from django.views import generic
+
 from .forms import CommentForm
 from django.shortcuts import (
     render, redirect, reverse, HttpResponse, get_object_or_404
@@ -9,6 +11,12 @@ def view_blog(request):
     """ A view that renders the blog contents page """
 
     return render(request, 'blog/blog.html')
+
+
+class PostList(generic.ListView):
+    queryset = Post.objects.filter(status=1).order_by("-created_on")
+    template_name = "post_detail.html"
+    paginate_by = 3
 
 
 def post_detail(request, slug):
