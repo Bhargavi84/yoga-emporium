@@ -91,27 +91,29 @@ ____
 
 ## **Strategy**
 **Objectives:**
-* To provide a quick and fast feeling while accessing the website to all first time users.
-* To create an easy way for storing the recipes and sharing to friends and family members.
-* To make easy steps to see other users recipes which is already added.
-* To know about the different food categories and ingredients.
-* To ensure users are able to edit and delete recipes if they have entered wrongly.
-* To make sure users can easily use search function and search their favourite dish in it. 
-* To learn cooking step by step for user who is cooking for the first time. 
+* To provide a quick and fast feeling while accessing the website to all first-time users.
+* To provide a unique customer experience.
+* To boost the efficiency of services.
+* To make responsive ecommerce website.
+* To Increase sales.
+* To make sure users can easily use search function and search their products and using sorting functionalities. 
+* To developing business relations.
+* To make secure payments by authentication and authorization. 
+* To make delivery costs free by purchasing above the certain price.
 
 
 ## **Scope**
-* To create a website that will help the users get motivated to share their authentic and traditional recipes.
-The website has been divided into different section so that users can easily look into that and the infomation are easy and understandable way so that  they can add, read, edit and delete their choices easily.
+* To create a website where the transactions would be handled electronically or online – e-commerce facilitates all the various shopping-related activities, including the purchase and sales of products and services, shipping, billing, etc. will be online.
+* The website has been divided into different section so that users can easily look into that and the infomation are easy and understandable way so that  they can login/signup, signout, add to bag, secure checkout, email confirmation, update profile/order information, remove products from bag and ave the order history choices very easily.
 
 ## **Structure**
-* This  website is a food recipes storage website that contains three sections.
+* This  website is e-commerce website that contains three sections.
     * ### Non Registered users
     * ### Registered user
     * ### Admin / Store owner
 
 * Non Registered users or first time visitors:- can enter the webpage and see all 
-recipes in Home page in order to see more they are supposed to register.
+products in Home page in order to see more they are supposed to register.
 They can see only three option in Nav bar **Home , Login and Register** on top in desktop and in sidenav bar / hamburger menu in mobile phones and tabs.
 
 * Registered user:- Once registered, users can click on login and enter the webpage. They can see **Home, Profile, New recipe, Logout**.Users can also look into their profile page and look other user's recipe by clicking on show more button in card in home page. 
