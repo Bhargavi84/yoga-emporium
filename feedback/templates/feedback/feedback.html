@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-{% load crispy_forms_tags %}
+
 
 {% block page_header %}
 <div class="container header-container">
@@ -10,12 +10,13 @@
   </div>
 </div>
 {% endblock %}
+
 <div class="overlay"></div>
 <div class="container mb-2">
   <div class="row">
-    <div class="col">
+    <div class="col mt-0">
       <hr>
-      <h2 class="logo-font mb-4">Feedback</h2>
+      <h2 class="logo-font mt-0">Feedback</h2>
       <hr>
     </div>
   </div>
@@ -28,46 +29,39 @@
       </div>
     </div>
   </div>
-  <div class="col-md-8 card mb-4  mt-3 ">
-    <div class="card-body">
-      <!-- comments -->
-      <h4>{{ comments.count }} Comments</h4>
-      {% for comment in comments %}
-      <div class="comments">
-        <p class="font-weight-bold">
-          {{ comment.name }}
-          <span class=" text-muted font-weight-normal">
-            {{ comment.created_on }}
-          </span>
-        </p>
-        {{ comment.body | linebreaks }}
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-
   <div class="container">
     <div class="row">
-  <div class="col-md-8 card mb-4  mt-3 ">
-    <div class="card-body">
-      {% if new_comment %}
-      <div class="alert alert-success" role="alert">
-        Your comment is awaiting moderation
+
+      <!-- Blog Entries Column -->
+      <div class="col-md-8 mt-3 left">
+        {% for post in post_list %}
+        <div class="card mb-4">
+          <div class="card-body">
+            <h2 class="card-title">{{ post.title }}</h2>
+            <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
+
+            <p class="card-text">{{post.content|safe|slice:":200" }}</p>
+            <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read More &rarr;</a>
+          </div>
+
+        </div>
+        {% endfor %}
+
       </div>
-  {% else %}
-  <h3>Leave a comment</h3>
-   
-  <form method="post" action="{% url 'post_detail'%}"  id="contact-form">
-    {% csrf_token %}
-    {{comment_form.as_p}}
-    <div class="form-group">
-      {{ form }}
     </div>
-    <button type="submit" class="btn btn-primary  btn-lg">Submit</button>
-  </form>
-  {% endif %}
   </div>
-  </div>
-  </div>
- 
-  {% endblock %}
+  {% if is_paginated %}
+  <nav aria-label="Page navigation conatiner"></nav>
+  <ul class="pagination justify-content-center">
+    {% if page_obj.has_previous %}
+    <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREV </a></li>
+    {% endif %}
+    {% if page_obj.has_next %}
+    <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
+
+    {% endif %}
+  </ul>
+  </nav>
+</div>
+{% endif %}
+{%endblock%}
