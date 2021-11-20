@@ -47,7 +47,8 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'profiles',
-    'blog',
+    'feedback',
+    
 
     # Other
     'crispy_forms',
@@ -67,6 +68,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'yoga_emporium.urls'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
 
 TEMPLATES = [
     {
