@@ -104,7 +104,7 @@ ____
 
 ## **Scope**
 * To create a website where the transactions would be handled electronically or online – e-commerce facilitates all the various shopping-related activities, including the purchase and sales of products and services, shipping, billing, etc. will be online.
-* The website has been divided into different section so that users can easily look into that and the infomation are easy and understandable way so that  they can login/signup, signout, add to bag, secure checkout, email confirmation, update profile/order information, remove products from bag and ave the order history choices very easily.
+* The website has been divided into different section so that users can easily look into that and the infomation are easy and understandable way so that  they can login/signup, signout, add to bag, secure checkout, email confirmation, update profile/order information, remove products from bag and save the order history very easily.
 
 ## **Structure**
 * This  website is e-commerce website that contains three sections.
@@ -114,14 +114,11 @@ ____
 
 * Non Registered users or first time visitors:- can enter the webpage and see all 
 products in Home page in order to see more they are supposed to register.
-They can see only three option in Nav bar **Home , Login and Register** on top in desktop and in sidenav bar / hamburger menu in mobile phones and tabs.
+They can see  **All PRODUCTS, CLOTHING, ESSENTIALS, SPECIAL OFFERS, SOCIAL MEDIA, MY ACCOUNT,SHOP NOW BUTTON ON SCREEN AND BAG** and other options which will be under the categories on top in desktop devices and in sidenav bar / hamburger menu in mobile phones and tabs.
 
-* Registered user:- Once registered, users can click on login and enter the webpage. They can see **Home, Profile, New recipe, Logout**.Users can also look into their profile page and look other user's recipe by clicking on show more button in card in home page. 
+* Registered user:- Once registered, users can click on login and enter the webpage. They can see **All PRODUCTS, CLOTHING, ESSENTIALS, SPECIAL OFFERS, SOCIAL MEDIA, MY ACCOUNT - MY PROFILE-LOGOUT, AND BAG**. Users can also look into their profile page and other options which will be under the categories. 
 
-* Admin / Store owner :- Admin / Store owner will have access to manage and delete categories and add and delete recipes (of other user's)
-The idea behind this is any unknown users cannot upload any kind of irrelavant images or contents. 
-Admin / Store owner page will have **Home, Profile, New recipe, Manage Categories and Logout** options on Navbar.
-
+* Admin / Store owner :- Admin / Store owner will have access to Product management - edit/delete categories and add, update and delete products.
 
 ## **Skeleton**
 ### Wireframes
@@ -142,7 +139,6 @@ Below image has been used as background image on the landing page in the project
 
 ### Font
  * Manrope, san-serif font has been used all over the project.
- * Cambria, Cochin, Georgia, Times, 'Times New Roman', serif is used only in media queries for h5 logo font.
 
 ![plot](static/images/color-palette.png)
 
