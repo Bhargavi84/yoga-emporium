@@ -147,6 +147,8 @@ input[name='q']::placeholder {
 }
 
 
+
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
@@ -304,6 +306,24 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
+/* -------------------------------- Footer */
+
+
+
+ footer {
+     
+    margin-top: auto;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+ }
+
+ .footer {
+     position: fixed;
+     background: rgba(78, 80, 80, 0.856);
+ }
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -458,6 +478,20 @@ input[name='q']::placeholder {
 
     h2.logo-font.mb-6 {
         margin-top: 85px;
+    }
+
+
+}
+
+@media (max-width: 320px) {
+
+    .display-5.logo-font.text-black {
+        font-size: 1rem;
+        padding-top: 10px;
+    }
+    .shop-here-button {
+        min-width: 200px;
+        margin-top: 10vh;
     }
 
 
