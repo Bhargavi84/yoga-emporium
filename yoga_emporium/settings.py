@@ -125,7 +125,7 @@ WSGI_APPLICATION = 'yoga_emporium.wsgi.application'
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('postgres://hgtwcgflnzchij:f421c1475d44dac2869baf20e9be49ba85f096c64a609d59e2b2e82026dee872@ec2-34-251-245-108.eu-west-1.compute.amazonaws.com:5432/d3rsnngus5mjss'))
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
 else:
     DATABASES = {

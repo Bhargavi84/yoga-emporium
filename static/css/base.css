@@ -36,7 +36,7 @@ i.fa-thumbs-up {
     font-size: 1.5rem;
 }
 
-i.fa-comment-dots {
+i.fas.fa-blog {
     font-size: 1.5rem;
 }
 
@@ -55,8 +55,7 @@ nav.navbar {
 
 .card.mb-4 {
     background: rgb(221, 237, 241);
-    margin-top: 7rem;
-
+    
 }
 
 .shop-here-button {
@@ -367,9 +366,6 @@ input[name='q']::placeholder {
         margin-top: 85px;
     }
 
-    .card.mb-4 {
-        margin-top: 7rem !important;
-    }
 }
 
 

@@ -77,21 +77,13 @@
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
         <ul class="list-inline list-unstyled text-center text-lg-right my-0">
           <li class="list-inline-item dropdown">
-            <a class="text-dark nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">
-              <div class="text-center">
-                <div><i class="fas fa-thumbs-up"></i></div>
-                <p class="my-0">Social Media</p>
+            <a href="{% url 'feedbacks' %}">
+              <div class="text-center text-dark">
+                <div><i class="fas fa-blog"></i></div>
+                <p class="my-0">Blogs
+                </p>
               </div>
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="user-options">
-              <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" class="dropdown-item"><i
-                  class="fab fa-instagram"></i> Instagram</a>
-              <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" class="dropdown-item"><i
-                  class="fab fa-facebook"></i> Facebook</a>
-              <a href="https://www.pinterest.com/" target="_blank" rel="noreferrer" class="dropdown-item"><i
-                  class="fab fa-pinterest"></i> Pinterest</a>
-            </div>
           </li>
           <li class="list-inline-item dropdown">
             <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
@@ -171,6 +163,7 @@
     {% endfor %}
   </div>
   {% endif %}
+ 
 
   {% block page_header %}
   {% endblock %}
@@ -179,14 +172,44 @@
   {% endblock %}
 
   {% block page_footer %}
-
+  <!-- Footer-->
+  <footer class="bg-light">
+    <div class="container">
+        <div class="row">       
+            <div class="col-lg text-center my-auto">  
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item me-4">
+                      <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" class="dropdown-item"><i
+                        class="fab fa-instagram"></i> Instagram</a>
+                    </li>
+                    <li class="list-inline-item me-4">
+                      <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" class="dropdown-item"><i
+                        class="fab fa-facebook"></i> Facebook</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="https://www.pinterest.com/" target="_blank" rel="noreferrer" class="dropdown-item"><i
+                        class="fab fa-pinterest"></i> Pinterest</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center my-auto">
+                <p class="mt-1 text-dark">Copyright &copy; Yoga Emporium 2021</p>
+            </div>
+        </div>
+    </div>
+</footer>
   {% endblock %}
-
+  
   {% block postloadjs %}
-  <script type="text/javascript">
-    $('.toast').toast('show');
-  </script>
-  {% endblock %}
+  <script>
+    // Toast dismiss function
+    $('.toast-close').click(function () {
+        document.querySelector('.toast').style.display = "none";
+    });
+</script>
+{% endblock %}
 
 
 
