@@ -44,18 +44,19 @@ nav.navbar {
     background: rgb(221, 237, 241);
 
 }
+
 .navbar-light .navbar-nav .nav-link {
     margin-right: 4rem;
 }
 
-.jumbotron{
+.jumbotron {
     background: rgb(221, 237, 241);
 }
 
-.card.mb-4{
+.card.mb-4 {
     background: rgb(221, 237, 241);
     margin-top: 7rem;
-   
+
 }
 
 .shop-here-button {
@@ -315,7 +316,7 @@ input[name='q']::placeholder {
     .card {
         width: 100%;
     }
-    
+
 }
 
 /* fixed top navbar only on medium and up */
@@ -365,10 +366,10 @@ input[name='q']::placeholder {
     h2.logo-font.mb-6 {
         margin-top: 85px;
     }
-    
+
     .card.mb-4 {
-        margin-top: 7rem!important;
-}
+        margin-top: 7rem !important;
+    }
 }
 
 

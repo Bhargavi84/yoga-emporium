@@ -3,11 +3,12 @@ from .models import Feedback, Comment
 
 
 class FeedbackAdmin(admin.ModelAdmin):
-    list_display = ('title', 'slug', 'status','created_on')
+    list_display = ('title', 'slug', 'status', 'created_on')
     list_filter = ("status",)
     search_fields = ['title', 'content']
     prepopulated_fields = {'slug': ('title',)}
-  
+
+
 admin.site.register(Feedback, FeedbackAdmin)
 
 
@@ -17,7 +18,6 @@ class CommentAdmin(admin.ModelAdmin):
     list_filter = ('active', 'created_on')
     search_fields = ('name', 'email', 'body')
     actions = ['approve_comments']
-
 
     def approve_comments(self, request, queryset):
         queryset.update(active=True)
