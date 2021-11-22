@@ -304,7 +304,9 @@ input[name='q']::placeholder {
 
 /* -------------------------------- Footer */
 
-
+.footer {
+    margin-top:auto;
+}
 
 /* -------------------------------- Media Queries */
 
@@ -317,6 +319,9 @@ input[name='q']::placeholder {
     .card {
         width: 100%;
     }
+    .footer {
+        margin-top:auto;
+      }
 
 }
 

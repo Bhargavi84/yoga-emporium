@@ -144,11 +144,35 @@
 {% endblock %}
 
 
-
-
 {% block page_footer %}
+ <!-- Footer-->
+ <footer class="footer bg-secondary">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg text-center my-auto">
+          <ul class="list-inline mb-0 text-white">
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook text-white"
+                  aria-hidden="true"></i><span class="sr-only">Facebook</span></a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram text-white" aria-hidden="true"></i><span class="sr-only">Instagram</span></a></li>
+            <li class="list-inline-item">
+              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter text-white"
+                  aria-hidden="true"></i><span class="sr-only">Twitter</span></a></li>
+            <li class="list-inline-item">
+              <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-pinterest text-white"
+                  aria-hidden="true"></i><span class="sr-only">Pinterest</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center my-auto">
+          <p class="mt-2 m-0 text-white">Copyright &copy; Yoga Emporium 2021</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 {% endblock %}
-
 <!-- Below Javascript code is borrowed from Code Institute's Boutique Ado project-->
 {% block postloadjs %}
 {{ block.super }}
