@@ -77,15 +77,6 @@
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
         <ul class="list-inline list-unstyled text-center text-lg-right my-0">
           <li class="list-inline-item dropdown">
-            <a href="{% url 'feedbacks' %}">
-              <div class="text-center text-dark">
-                <div><i class="fas fa-blog"></i></div>
-                <p class="my-0">Blogs
-                </p>
-              </div>
-            </a>
-          </li>
-          <li class="list-inline-item dropdown">
             <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">
               <div class="text-center">
@@ -107,6 +98,15 @@
             </div>
           </li>
           <li class="list-inline-item">
+            <a class="nav-link" href="{% url 'feedbacks' %}">
+              <div class="text-center text-dark">
+                <div><i class="fas fa-blog"></i></div>
+                <p class="my-0">Blogs
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="list-inline-item">
             <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
               href="{% url 'view_bag' %}">
               <div class="text-center">
@@ -123,6 +123,7 @@
           </li>
         </ul>
       </div>
+      <div class="col-12 col-lg-4 my-auto py-1 py-lg-0"></div>
     </div>
 
     <div class="row bg-white">
@@ -143,7 +144,6 @@
         </marquee>
       </div>
     </div>
-
   </header>
 
   {% if messages %}
@@ -162,8 +162,9 @@
     {% endwith %}
     {% endfor %}
   </div>
+
   {% endif %}
- 
+
 
   {% block page_header %}
   {% endblock %}
@@ -171,45 +172,13 @@
   {% block content %}
   {% endblock %}
 
-  {% block page_footer %}
-  <!-- Footer-->
-  <footer class="footer">
-    <div class="container">
-        <div class="row">       
-            <div class="col-lg text-center my-auto">  
-                <ul class="list-inline mb-0">
-                    <li class="list-inline-item me-4">
-                      <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" class="social-links text-white"><i
-                        class="fab fa-instagram"></i> Instagram</a>
-                    </li>
-                    <li class="list-inline-item me-4">
-                      <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" class="social-links text-white"><i
-                        class="fab fa-facebook"></i> Facebook</a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="https://www.pinterest.com/" target="_blank" rel="noreferrer" class="social-links text-white"><i
-                        class="fab fa-pinterest"></i> Pinterest</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col text-center my-auto">
-                <p class="mt-1 text-white">Copyright &copy; Yoga Emporium 2021</p>
-            </div>
-        </div>
-    </div>
-</footer>
-  {% endblock %}
-  
+
   {% block postloadjs %}
-  <script>
-    // Toast dismiss function
-    $('.toast-close').click(function () {
-        document.querySelector('.toast').style.display = "none";
-    });
-</script>
-{% endblock %}
+  <script type="text/javascript">
+    $('.toast').toast('show');
+  </script>
+  {% endblock %}
+
 
 
 

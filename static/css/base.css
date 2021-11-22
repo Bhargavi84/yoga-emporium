@@ -45,10 +45,6 @@ nav.navbar {
 
 }
 
-.navbar-light .navbar-nav .nav-link {
-    margin-right: 4rem;
-}
-
 .jumbotron {
     background: rgb(221, 237, 241);
 }
@@ -308,20 +304,6 @@ input[name='q']::placeholder {
 
 /* -------------------------------- Footer */
 
-
-
- footer {
-     
-    margin-top: auto;
-   left: 0;
-   bottom: 0;
-   width: 100%;
- }
-
- .footer {
-     position: fixed;
-     background: rgba(78, 80, 80, 0.856);
- }
 
 
 /* -------------------------------- Media Queries */
