@@ -311,7 +311,7 @@ input[name='q']::placeholder {
 /* -------------------------------- Footer */
 
 .footer {
-    margin-top: auto;
+    margin-top: auto !important;
 }
 
 /* -------------------------------- Media Queries */
