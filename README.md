@@ -316,10 +316,10 @@ ___
  * ### **Code Validity**
     Code validity was performed by the following tools and passed except warnings due to HTML validator was unable to recognize Jinja templates.
 
-    * HTML Markup Validation [Pass](https://validator.w3.org/)
-    * CSS Validation [Pass](https://jigsaw.w3.org/css-validator/)
-    * JSHint [Pass](https://jshint.com/)
-    * PEP8 online [Pass](http://pep8online.com/)
+    * HTML Markup Validation (https://validator.w3.org/)
+    * CSS Validation (https://jigsaw.w3.org/css-validator/)
+    * JSHint (https://jshint.com/)
+    * PEP8 online (http://pep8online.com/)
 
 * ### **Testing user stories**
 
