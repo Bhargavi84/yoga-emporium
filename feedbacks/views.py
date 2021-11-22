@@ -6,7 +6,7 @@ from .forms import CommentForm
 def feedbacks(request):
     feedbacks = Feedback.objects.filter(status=1).order_by('-created_on')
 
-    template = 'feedbacks/feedbacks.html'
+    template = 'feedbacks/news.html'
     return render(request, template, {'feedbacks': feedbacks})
 
 

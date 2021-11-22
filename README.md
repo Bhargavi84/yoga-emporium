@@ -289,19 +289,22 @@ The footer feature is only displayed on All products page, have social media lin
 
 ### Features left to Implement
 
- ### Home Page :- 
+ ### Home app Page :- 
 * Carosel Images.
 * Contact Form.
 * Home page LOGO.
 
- ### Product page :-
+ ### Product app page :-
 * Discount coupons logic on purchasing over 50$.
 
  ### Product Management :-
  * Confirmation message modal before deleting the product(Admin/Superuser).
 
- ### News Page :-
+ ### News app Page :-
  * Adding Images.
+ 
+ <!---News app template name has been changed for the better user experience but it is implemented as feedbacks in the project since the News name suits--->
+
 
   
 
