@@ -217,7 +217,7 @@ The News menu displays the latest news from admin / Store owener on the top and 
 * If you add an product, Bag icon color changes to blue, Message appears on top right corner saying that "the product is added to your bag". Then Secure checkout  option will be on the display where you can click that and go to checkout page.
 * In checkout page will display the grand total of the products added and you can adjust the quantity of the bag manually typing number or num stepper and click on add to bag button.
 * Secure checkout button will route to the Confirm order form (consists of card details cvv and expiry date) and a confirm order button will route to the order history page and confirmation email sent message pop-up is displayed.
-* Order History Page also has a button to go back "Now checkout the latest deals" and it routes to the Products page.
+* Order History Page also has a button to go back "Now checkout the latest deals" and it route to the Products page.
 
 ### All products
 * All products nav item has 4 dropdowns :-
@@ -258,7 +258,7 @@ The News menu displays the latest news from admin / Store owener on the top and 
     Also has hover button on the top to display which category you are viewing.
     * Clearance :- When clicked, it will sort products category Clearance and displays on the screen.
     Also has hover button on the top to display which category you are viewing.
-    * All specials :- When clicked, it will sort New arrival, Deals and Clearance and displays on the screen.
+    * All specials :- When clicked, it will sort New arrival, Deals, Clearance and All specials and displays on the screen.
      This feature also have all 3 categories hover button on the top to swap the category.
 
 ### Delivery Banner
@@ -277,7 +277,7 @@ The News menu displays the latest news from admin / Store owener on the top and 
 
 
 ### SHOP NOW Button
-*   The shop now button on the screen, when clicked routes to Products page. Shoppers can easily navigate to Products page.
+*   The shop now button on the screen, when clicked route to Products page. Shoppers can easily navigate to Products page.
 
 ### Footer
 The footer feature is only displayed on All products page, have social media links and copyright information. when clicked the social links opens in the new tab.
@@ -354,101 +354,90 @@ ___
         * As a registered user of the website, I want to see social media links, to contact or follow the website on social media.
             The social link are clearly visible on the footer bar and easily accessible all the time.
         * As a registered user to the yoga emporium website, I want to get a confirmation message before deleting the recipe.
-            * once user is logged in , on nav bar click on profile, on the individual recipe card click on show more and it routes to show recipe page where user can see Edit and Delete buttons, Delete button is easily accessible and clearly labelled.
+            * once user is logged in , on nav bar click on profile, on the individual recipe card click on show more and it route to show recipe page where user can see Edit and Delete buttons, Delete button is easily accessible and clearly labelled.
 
 :arrow_up:[Back-to-top](#contents)
 
 * ### **Functionality testing**
     * ### Manual Testing
+
         * #### Home Page
             * Navigation Bar :-The Materialize navbar is fixed and is visible across all pages and on all screen size devices and is working as expected and it collapses into a hamburger menu on Tablets and smaller devices.
-            * Login menu :- when clicked redirects to login page as expected
+            * My Account Menu :- when clicked collapse to My profile and login page (for registered users)as expected,
+            when clicked collapse to Register and login page (Non registered users) as expected.
             * Register Menu :- when clicked, Redirects to Register page as expected
-            * The brand logo :- when clicked, redirects to the Home page, works as expected.
-            * New recipe : when clicked, form is displayed to add recipe and works as expected
-            * Manage categories(Only for Admin / Store owner):- when clicked, routes to get categories page and deplays the list of categories in the page, works as expected.
-            * logout :- when clicked, it routes to login page and displays flash message "You have been logged out"
-            * Footer bar :- The footer is fixed and visible on all navigated pages and in all screen devices. It consists of four social links.
-            When clicked on social links it opens in a new tab of respective social link, works as expected.
-            * Search button :-Tried and tested by giving input of recipe name category name and Ingredients.
-            when typed non existing recipes the error is displayed as "No results found". Clicking on the Search button without entering any value - "Please fill out this field message" is displayed, prompting users to enter a value, works as expected.
-            * Reset button :- when clicked it resets the value given in serach field and refreshes to get recipes page, works as expected.
-            * Show more button on individual recipe card :-
-            when clicked it routes to Login page (if user have logged in)
-            when clicked it routes to show recipe (if user is already logged in ) page and displays user's recipe information, works as expected.
+            * The Logo font :- when clicked, redirects to the Home page, works as expected.
+            * All Products :- when clicked, collapse to - by category, by price, by rating and all products, works as expected
+            * Clothing :- when clicked, collapse to Activewear, Pants, Shirts and All clothing, works as expected.
+            * Clothing :- when clicked, collapse to Mats -Blocks, Antiques-Idols and others, works as expected.
+            * Special Offers :- when clicked, collapse to New arrvals, Deals, Clearance and all special, works as expected.
+            * News Menu :- when clicked, it route to new page.
+            * Bag Menu
+            * Footer :-The footer is relative and transparent background visible on Home page. It consists of four social links. When clicked on social links it opens in a new tab of respective social link, works as expected.
+            * Search button :-Tried and tested by giving input Product name category name and Descriptions
+            when typed non existing Products it displays as "0 results found". Clicking on the Search button without entering any value - Error alert "You didnt enter any search criteria" is Popped up, prompting users to enter a value, works as expected.
+            * Shop Now button on screen :- when clicked route to products page, works as expected.
+            * Bag Menu :- when clicked route to users bag and displays product which is added. Or just an empty bag information.works as expected.
 
         * #### Profile Page
-
             * Clicking on the navigation bar's Profile link has been routed to the user's profile page, works as expected.
-            * Clicking on Profile page, recipes card show more button, has been routed to the show recipe page, works as expected.
-            * Edit button and delete Button in show recipe page.
-                * Edit :- Routes to edit recipe page works as expected.
-                * Delete :- Pops up a window for confirmation for deletion, works as expected.
-        * #### New Recipe page
+            * Clicking on Profile page, Dafault delivery information and order history is displayed.
+                * Update Information button :- Updates information after entering the order form and success alert pops up and stays in the same page.works as expected.
 
-            * Clicking on the navigation bar's New Recipe link has been routed to the add new recipe page.
-                * Clicking add Recipe Category field, the user can choose the category from the list.
-                * Clicking on the Recipe Name field, the user can enter the recipe name, which must be length between 5-30 characters. Display error message when characters are above the range.
-                * Clicking on the Recipe Ingredients field, the user can enter the recipe ingredients, which must be length between 5-5000 characters. All text can be separated on the new line. Display error message when characters are above the range.
-                * Clicking on the Recipe Instructions field, the user can enter the recipe instructions, which must be length between 5-5000 characters. All text can be separated on the new line. Display error message when characters are above the range.
-                * Clicking on the recipe Image URL field, the user can paste the recipe IMG URL. Added an invalid URL or longer than 300 characters should display an error message.
-                * Clicking on the recipe Preperation Time field, the user can enter numbers between 0-500 min. Trying to add number out of range should display an error message.
-                * Clicking on the recipe Cook Time field, the user can enter numbers between 0-120 min. Trying to add number out of range should display an error message.
-                * Clicking on the recipe Serve field, the user can enter numbers between 1-100. Trying to add number out of range should display an error message.
-                * Clicking Add recipe button to add a new recipe, the user will be redirected to the Show Recipe page. 
+        * #### Logout page
+            * Clicking on the navigation bar's logout  link has been route to the logout confirmation page.
+                * Clicking on Cancel button route to Home page.
+                * Clicking on the Sign out button route to Home page, Success alert "you have signed out". 
+                Logout page works as expected.
 
-                All above fields of Add recipe works as expected.
+        * #### Login page 
+            * Clicking on Login page, route to sign-in page form to enter details. If entries are wrong, error is displayed "The username and/or password you specified are not correct" if entries are correct it will route to Home page Alert Success alert is displayed saying "Successfully signed in as Username".works as expected.
 
-        * #### Edit Recipe in show recipe page of user's profile.
-            * Clicking on Edit button it routes to edit recipe page.
-            * Category field of Edit recipe page, the user can choose the category from the list.
-            * Clicking on the Edit Recipe Name field, the user can enter the recipe name, which must be length between 5-30 characters. Display error message when characters are above the range.
-            * Clicking on the Edit Recipe Ingredients field, the user can enter the recipe ingredients, which must be length between 5-5000 characters. All text can be separated on the new line. Display error message when characters are above the range.
-            * Clicking on the Edit Recipe Instructions field, the user can enter the recipe instructions, which must be length between 5-5000 characters. All text can be separated on the new line. Display error message when characters are above the range.
-            * Clicking on the Edit recipe Image URL field, the user can paste the recipe IMG URL. Added an invalid URL or longer than 300 characters should display an error message.
-            * Clicking on the Edit recipe Preperation Time field, the user can enter numbers between 0-500 min. Trying to add number out of range should display an error message.
-            * Clicking on the Edit recipe Cook Time field, the user can enter numbers between 0-120 min. Trying to add number out of range should display an error message.
-            * Clicking on the Edit recipe Serve field, the user can enter numbers between 1-100. Trying to add number out of range should display an error message.
-            * Clicking Save recipe button to save the changes made, the user will be redirected to the Show Recipe page. 
-        * #### Delete Recipe in show recipe page of user's profile.
-            * Clicking on the Delete recipe button, window pops up for the confirmation of deletion.By clicking ok, this will route to Show recipe page and Flash message will be displayed
-        
+
+        * #### News page.
+            * Clicking on News button it route to Latest news page. Where the latest news is displayed first with name, date and time.
+            * Clicking on Read more buttons route to Comments Page. Latest comments will be displayed under the latest news and a comment form below. works as expected.
+            * Clicking on submit button in leave a comment form will post the comment and message is displayed on screen saying awaiting approval.
+            * Clicking on Go back to  News page will route back to News page.
             **All above fields of Edit recipe works as expected**.
 
-        * #### Manage categories(will be reflected to Admin / Store owner only)
-            * Clicking on the navigation bar's Manage Categories link it will be routed to the categories page. only Admin / Store owner has access to this link.
-            * Clicking the Add category button, the website Admin / Store owner has permission to do that and will be routed to the Add category page.
+        * #### Bag page of user's profile.
+            * Clicking on the Bag menu, will displays the products in the bag.
+            * Clicking on the add to bag menu, the producta will be add for checkout.
+            * Clicking on keep shopping button route back to products page.
+                * ### Secure checkout page
+                * Clicking on secure checkout button leads to shopping bag page and users can adjust the bag , size(if any)
+                amd click on secure checkout.
+                * Clicking on the keep shopping  button leads to products page back.
+                * Clicking on Secure checkout inside shopping bag will route to Checkout form for the delivery details filling and the Payment process.
+                * Clicking on Complete order will authenticate and overlay will be loaded to authorize and if the card number and details are correct it completes the order and alert success message displays saying order is confirmed and confirmation email has been sent to given address and page route back to Checkout success page. Else 
+                Error message is displayed below the payement row "Enter the valid card details",
+                * Clicking on Adjust bag button will route back to shopping bag to secure checkout again or adjust the quantity and size.
 
-        * #### Add category
-            * Clicking the Category Name field, the Admin / Store owner can enter 3-25 characters long text. Display error message if the text is out of the range.
-            * Clicking the Add category  button, the Admin / Store owner has been routed to the categories page and the new category will be added in alphabetical order.Flash message will be displayed
+            **All above fields of Bag app works as expected**.
 
-        * #### Edit category
-            * Clicking the Edit category button, the website Admin / Store owner has permission to do that and will be routed to the Edit category page.
-            * Clicking the CANCEL button, the Admin / Store owner will be routed back to the categories page.
-            * Clicking the Save Category button, the Admin / Store owner has been routed to the categories page and the edited category will be added in alphabetical order.Flash message will be displayed.
-
-        * #### Delete Category in Admin / Store owner's profile.
-
-            * Clicking on the Delete category button, window pops up for the confirmation of deletion.By clicking Agree, this will route to categories page and Flash message will be displayed
-
-            **All above fields of Manage categories works as expected**.
+        ### Functionality testing for Admin / Store Owner
+        * **Product Management** : Clicking on Product management under My account menu will route to add product page, where admin or store owner can add product by filling out the product details and clicking on add product. Success alert is displayed saying "Successfully added product" with noimage as default.
+        * **Edit product** : Clicking on edit button under the product detail page will route to product management page.
+        Image remove is also working as expected. Clicking Update product will route back to product detail page and Success message alert saying "Successfully updated product" cancel button route back to products page.
+        * **Delete product**: Clicking on Delete button on the product detail page will delete the product and Success message is displayed "Product deleted"
+        " Edit / Delete buttons are also visible on card body of the Individual products.
 
     * ### Defensive design testing
-        * Registration attempt with an existing Username
+        * Registration attempt with an existing Username.
 
         ![plot](static/images/register.png)
 
-        * Login attempt with an unmatching Username / Password fields
+        * Login attempt with an unmatching Username / Password fields.
 
         ![plot](static/images/login.png)
 
-        * Confirmation delete modal pops up when users attempt to delete the recipe from the webpage to avoid accidental deletion.
-
-        ![plot](static/images/delete-recipe.png)
-
-        * Search results error when user attempts to find which is irrelavant to cooking or recipes.
+        
+        * Search results error.
         ![plot](static/images/search-error.png)
+
+
+        * Error in payment process. Always fails with a decline code of insufficient_funds.
 
 :arrow_up:[Back-to-top](#contents)
 
@@ -457,7 +446,7 @@ ___
     The website fits and adapts fairly ok to the different viewport size devices.
     ![plot](static/images/responsive.png)
 * ### **Usability Testing**
-    * This website have been shared to family and friends to add, read, edit and delete recipes none of them experienced any issues during the testing process and it was confirmed that the website was easy to use and navigate. They were able to effectively use the interactive elements of the website, find the information they were looking for and easily understand the purpose of the website. 
+    * This website have been shared to family and friends Register, Login and Add products to bag, Post comments and checkout with Test cards(4242424242424242) any cvv and any expity dates. During the testing process it was confirmed that the website was easy to use and navigate. They were able to effectively use the interactive elements of the website, find the information they were looking for and easily understand the purpose of the website. Post the comments for the latest news and get the alert messages and confirmation Emails properly.
 * ### **Performance testing**
     Performance testing was carried out using Lighthouse in Chrome Developer Tools.
     * Desktop Performance was excellent in accessibility.
