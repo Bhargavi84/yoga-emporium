@@ -173,52 +173,32 @@ ___
  * ### **Navigation bar**
  The nav bar feature is fixed in desktops and if resized turns into a hamburger icon in mobile and tablet screen and coresponding link will display from left side.
 
- * ### **Home / Landing page**
+ * ### **Home / Landing page** -> Yoga Emporium [logo font]
  
  * The Home page feature have the search panel at the top.
  If user enters a word , it displays the results below the panel it takes data from product name, and description. otherwise it displays a message '0 Products found for "name you have entered".
- By clicking on "Yoga Emporium" logo font retrieves the home page.
+ By clicking on "Yoga Emporium" logo Icon retrieves the home page.
  * Menu - My profile, Clothing, Essntials, Special offers.
- * Social media icon, when clicked, respective social link is opened in new tab.
  * My Account Icon has profile and logout dropdown.
- * Bag Icon 
- * Blog Icon
+ * Blog Icon 
+ * Bag Icon
  * Shop Now button on the mid screen.
  
- * ### Profile
- The Profile page feature have the display of username on top of the page, also displays  user's recipe cards and has a show more button and when clicked it will take to show recipe page.
+ * ### My Profile App -> Update Information 
+ My profile page feature will display default delivery infomration, update information button on the page and the order history.
 
-* ### New Recipe
-The New recipe page feature, will take the new input in the form,  user can insert by choosing the category name and insert the recipe according to that. All entered data will be stored in MongoDB and redirected to the website's other pages.If the user leaves the input field empty and clicks Submit button, will display an error message"Please fill out this field". The input line will also changes in color to red.
+* ### Logout 
+The logout function displays the signout form and confirmation button and cancel button.
 
-* Choose your category :- field has a list of categories that the user can pick up for their recipe.
-* Recipe Name :-field a user can input 5-30 characters long.
-* Ingredients :- field a user can input 5- 5000 characters long and can be separated on a new line for final display all text into an array.
-* Instructions:- field a user can input 5- 5000 characters long text and can be separated on a new line for final display all text into an array.
-* IMG URL :- field the user has to paste image address and has to be 5-300 characters long.
-* Preparation:- Time field a user can input numbers from 0-500.
-* Cooking Time:- field a user can input numbers from 0-120.
-* Servs:- field a user can input numbers from 1-100.
-* Add recipe:- button has a color change when the user is hovers on the button, and when clicked will display flash message "Recipe successfully Added" routed to the profile page
+* ### Blog App -> Veiw Blog -> Leave a Comment
+The Blog app displays the latest blog entries on the top and readmore button, when read more button is clicked it will take you to comments section and a form "Leave your comment" where users can enter name, email and body of the message and submit button.
 
-* ### Edit Recipe
-The Edit recipe form has features same as Add recipe. Only recipe owners and website Admin / Store owner can edit recipes. There is a CANCEL button that will bring you back to a profile page, and the button save recipe will update the recipe and when clicked will display flash message "Recipe successfully updated" routed to the profile page. All edited data will be stored in MongoDB and redirected to others pages.If the user leaves the input field empty and clicked submit button will display an error message "Please fill out this field", also the input line changes in color.
-
-* Choose your category :- field has a list of categories that the user can pick up for their recipe.
-* Recipe Name :-in this field a user can input 5-30 characters long.
-* Ingredients :- in this field a user can input 5- 5000 characters long and can be separated on a new line for final display all text into an array.
-* Instructions:- in this field a user can input 5- 5000 characters long text and can be separated on a new line for final display all text into an array.
-* IMG URL :- in this field the user has to paste image address and has to be 5-300 characters long.
-* Preparation Time :- in this field a user can input numbers from 0-500.
-* Cook Time:- in this field a user can input numbers from 0-120.
-* Servs:- field a user can input numbers from 1-100.
-* Save Recipe button has color change when the user hovers on the button, redirected user to show recipe page with new changes that user has made.
-* CANCEL button redirected back to the show recipe page.
-
-* Delete Recipe
-The delete button is next to edit button in show recipe page.
-when user clicks on this button the message is popped out for confirmation of deletion of the recipe and the pops up window "Do you want to delete (recipe name)" and has two options Ok and Cancel. when user clicks Ok the recipe will be deleted and flash message is "Recipe successfully deleted" when user clicks cancel it routes back to show recipe page.Only recipe owners and website Admin / Store owner can delete recipes.
-
+* ### Bag App -> Your bag is empty / Add Products -> Secure Checkout -> Adjust quantity -> Checkout -> Order History -> Confirmation Email 
+* The Bag app will display the grand total, products in the bag if added or just an empty bag information and go to "shop now" button.
+* If you add an product, Message appears on top right corner saying that "the product is added to your bag". Then Secure checkout  option will be on the display where you can click that and go to checkout page.
+* In checkout page will display the grand total of the products added and you can adjust the quantity of the bag manually typing number or num stepper and click on add to bag button.
+* Secure checkout button take you to the Confirm order form (consists of card details cvv and expiry date) and a confirm order button will take you to the order history and confirmation email sent message pop-up is displayed.
+* Order History Page also has a button to go back to "Now checkout the latest deals".
 
 * ### Login page
 The Login page feature will help the user to login to the website and if the user enters wrong username / password the flash message will pop out"Incorrect username/password" to alert user to enter the correct credentials. The username field has to be a 5-15 character long string, Error message is displayed to enter mandatory fields(if nothing is entered). Clicking the login button the user will be routed to the user's profile page.There is a link to the Register page, below the login form. Clicking that link the user will be routed to the Register page.
