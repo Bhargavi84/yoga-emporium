@@ -140,7 +140,7 @@ Below image has been used as background image on the landing page in the project
 ### Font
  * Manrope, san-serif font has been used all over the project.
 
-![plot](static/images/color-palette.png)
+![plot](static/images/)
 
 ___
 
@@ -176,66 +176,134 @@ ___
  * ### **Home / Landing page** -> Yoga Emporium [logo font]
  
  * The Home page feature have the search panel at the top.
- If user enters a word , it displays the results below the panel it takes data from product name, and description. otherwise it displays a message '0 Products found for "name you have entered".
+ If user enters a word , it displays the results below the panel it takes data from product name, and description. otherwise it displays a message - '0 Products found for "name you have entered".
  By clicking on "Yoga Emporium" logo Icon retrieves the home page.
- * Menu - My profile, Clothing, Essntials, Special offers.
+ * Menu - All Products, Clothing, Essetials, Special offers.
  * My Account Icon has profile and logout dropdown.
- * Blog Icon 
+ * News Icon 
  * Bag Icon
+ * Delivery Banner
+ * Sort by scroll bar
  * Shop Now button on the mid screen.
  
 *   ### My Account --> Product Management --> Register --> Login
- * ### Register page
-The register page  feature will help first time user to register to the page and create a login. username field is a string which has to be 4 characters and more, including lower and upper case and any number(alphanemeric)
-User has to enter Email, Email address confirmation, Name, Username, Password and Password again.
-Error message is displayed to enter mandatory fields(if nothing is entered).
-if the user enters wrong username / password the flash message will pop out to alert  user to enter the correct credentials. Clicking the signup button the user will be routed to the All products page and flash message diplays "Signup successfull"
 
- ### Login page
-The Login page feature will help the user to login to the website. The username field has to be a 4 characters and more, Error message is displayed to enter mandatory fields(if nothing is entered) as "The username and/or password you specified are not correct.. Clicking the sign in button the user will be routed to the user's All products page.
-
- * ### My Profile App -> Update Information 
- My profile page feature will display default delivery infomration, update information button on the page and the order history.
-
-* ### Logout 
-The logout function displays the signout form and confirmation button and cancel button.
-
-* ### Feedback App -> News -> Leave a Comment
-The News menu displays the latest news on the top and readmore button on that, when read more button is clicked it will route to comments section and a form "Leave your comment" where users can enter name, email and body of the message and post the comment by clicking submit button.
-
-* ### Bag App -> Your bag is empty / Add Products -> Secure Checkout -> Adjust quantity -> Checkout -> Order History -> Confirmation Email 
-* The Bag app will display the grand total, products in the bag if added or just an empty bag information and go to "shop now" button.
-* If you add an product, Message appears on top right corner saying that "the product is added to your bag". Then Secure checkout  option will be on the display where you can click that and go to checkout page.
-* In checkout page will display the grand total of the products added and you can adjust the quantity of the bag manually typing number or num stepper and click on add to bag button.
-* Secure checkout button will route to the Confirm order form (consists of card details cvv and expiry date) and a confirm order button will route to the order history page and confirmation email sent message pop-up is displayed.
-* Order History Page also has a button to go back to "Now checkout the latest deals" it routes to the All product page.
-
-* ### Product Management
-* Product Management feature is only accessible to Admin / Store owner. If clicked on Product Management it will route to add product page and displays form which has Category, SKU, Name, Description, size, price and Rating. It has 3 buttons, Select Image, Cancel and Add product. When clicked on Select Image button , any image can be added from your local folder,when clicked on cancel it will route to all products page and when clicked on add product it will route to all products page and success message is popped up as "Product added". 
+* ### Product Management (only for admin/store owner)
+* Product Management feature is only accessible to Admin / Store owner. If clicked on Product Management it will route to add product page and displays form which has Category, SKU, Name, Description, size, price and Rating. It has 3 buttons, Select Image, Cancel and Add product. When clicked on Select Image button , any image can be added from your local folder,when clicked on cancel it will route to Products page and when clicked on add product it will route to Products page and success message is popped up as "Product added". 
 * Cliking on the product details, it will route to product details page and has edit / delete button, 
 * Clicking on the Edit button the Admin / Store owner will be routed to the Edit product page, and Alert message is popped as "You are editing product name"
 * Clicking on the Delete button, the product is deleted and success message pops up as "Successfully deleted"
 
-* ### Footer
-The footer feature have social media links and copyright information. when clicked the social links opens on the new tab.
+ * ### Register page
+The register page  feature will help first time user to register to the page and create a login. username field is a string which has to be 4 characters and more, including lower and upper case and any number(alphanemeric)
+User has to enter Email, Email address confirmation, Name, Username, Password and Password again.
+Error message is displayed to enter mandatory fields(if nothing is entered).
+if the user enters wrong username / password the flash message will pop out to alert  user to enter the correct credentials. Clicking the signup button the user will be routed to the Products page and flash message diplays "Signup successfull"
+
+ ### Login page
+The Login page feature will help the user to login to the website. The username field has to be a 4 characters and more, Error message is displayed to enter mandatory fields(if nothing is entered) as "The username and/or password you specified are not correct.. Clicking the sign in button the user will be routed to the Home page.
+
+ * ### My Profile -> Update Information 
+ My profile page feature will display default delivery infomration form, update information button on the page and the order history. when clicked on Update information button after filling the form, the order is updated and and success message will display and stays on the same page.
+ 
+* ### Logout 
+The logout function displays the signout form and confirmation button and cancel button. When clicked on the signout button it will be routed to back to Home page.
+
+* ### Feedback App -> News -> Leave a Comment
+The News menu displays the latest news from admin / Store owener on the top and readmore button on that it displays name, date,time and the Latest News in a card, when read more button is clicked it will route to comments section and a form "Leave your comment" where users can enter name, email and body of the message and post the comment by clicking submit button. You will see "your message is awaiting approval".
+
+* ### Bag App -> Your bag is empty / Add Products -> Secure Checkout -> Adjust quantity -> Checkout -> Order History -> Confirmation Email 
+* The Bag app will display the grand total, products in the bag if added or just an empty bag information and go to "shop now" button. The will be routed to All products age.
+* If you add an product, Bag icon color changes to blue, Message appears on top right corner saying that "the product is added to your bag". Then Secure checkout  option will be on the display where you can click that and go to checkout page.
+* In checkout page will display the grand total of the products added and you can adjust the quantity of the bag manually typing number or num stepper and click on add to bag button.
+* Secure checkout button will route to the Confirm order form (consists of card details cvv and expiry date) and a confirm order button will route to the order history page and confirmation email sent message pop-up is displayed.
+* Order History Page also has a button to go back "Now checkout the latest deals" and it routes to the Products page.
+
+### All products
+* All products nav item has 4 dropdowns :-
+    * By price :- When clicked , it will sort the products by price in asc order and displays on the screen.
+    Also has hover button on the top to display which category you are viewing.
+    * By Rating :- When clicked, it will sort the products by rating in desc order and displays on the screen.
+    Also has hover button on the top to display which category you are viewing.
+    * By Category :- When clicked, it will sort alphabetically (category) and displays on the screen.
+    Also has hover button on the top to display which category you are viewing.
+    * All Products :- When clicked, it will sort alpabetically (product name) and displays on the screen.
+    This feature also have all 3 categories hover button on the top to swap the category.
+
+### Clothing
+ * Clothing nav item has 4 dropdowns :-
+    * Acivewear :- When clicked , it will sort the products category Activewear and displays on the screen.
+    Also has hover button on the top to display which category you are viewing.
+    * Pants :- When clicked, it will sort the products category Pants and displays on the screen.
+    Also has hover button on the top to display which category you are viewing.
+    * Shirts :- When clicked, it will sort products category Shirts and displays on the screen.
+    Also has hover button on the top to display which category you are viewing.
+    * All clothing :- When clicked, it will sort Activewear, Pants and Shirts and displays on the screen.
+     This feature also have all 3 categories hover button on the top to swap the category.
+
+### Essentials
+ * Essentails nav item has 3  dropdowns :-
+    * Mats and Blocks :- When clicked , it will sort the products by category Mats and Blocks and displays on the screen.
+    Also has hover button on the top to display which category you are viewing.
+    * Antiques and Idols :- When clicked, it will sort the products by category Antiques and Idols and displays on the screen.
+    Also has hover button on the top to display which category you are viewing.
+    * Other :- When clicked, it will sort products category Mats&Blocks, Antiques&Idols and displays on the screen.
+     This feature also have all 3 categories hover button on the top to swap the category.
+
+### Special Offers
+ * Speacial Offers nav item has 4 dropdowns :-
+    * New Arrival :- When clicked , it will sort the products category New arrival and displays on the screen.
+    Also has hover button on the top to display which category you are viewing.
+    * Deals :- When clicked, it will sort the products category Deals and displays on the screen.
+    Also has hover button on the top to display which category you are viewing.
+    * Clearance :- When clicked, it will sort products category Clearance and displays on the screen.
+    Also has hover button on the top to display which category you are viewing.
+    * All specials :- When clicked, it will sort New arrival, Deals and Clearance and displays on the screen.
+     This feature also have all 3 categories hover button on the top to swap the category.
+
+### Delivery Banner
+* This Delivery banner is set on the top of screen and will be visible all time at the top. 'Marquee' element tag has been implemented to the sentence.
+
+### Sort by scroll bar
+* Sorting feature has been implement as below.
+    * Price (low to high)
+    * Price(high to low)
+    * Rating(low to high)
+    * Rating(high to low)
+    * Name(A-Z)
+    * Name(Z-A)
+    * Category(A-Z)
+    * Category(Z-A)
+
+
+### SHOP NOW Button
+*   The shop now button on the screen, when clicked routes to Products page. Shoppers can easily navigate to Products page.
+
+### Footer
+The footer feature is only displayed on All products page, have social media links and copyright information. when clicked the social links opens in the new tab.
+
+### Other Features 
+* Nav bar is a container fluid and will stick to the top at all time.
+* Overlay effect has been implemented to other pages to overlay the background Image which will be visible all the time on the home page.
+
 
 ### Features left to Implement
 
  ### Home Page :- 
-* The background Image of the home page which will be more attractive.
-* Pagination.
-* Recipe Blog on Nav bar
-* Field to promote our brand of kitchen tools
-(e.g. oven, pressure cooker, etc…).
+* Carosel Images.
+* Contact Form.
+* Home page LOGO.
 
- ### Profile Page :-
-* The image of the user, contact details like email or phone number
-* sorted recipe cards according to category and unique recipes
+ ### Product page :-
+* Discount coupons logic on purchasing over 50$.
 
- ### Login page / Register page
- * Password will include special characters.
- * Email address field to get to know latest news and updates.
- * once logged in "New recipe added by some user" pop up.
+ ### Product Management :-
+ * Confirmation message modal before deleting the product(Admin/Superuser).
+
+ ### News Page :-
+ * Adding Images.
+
+  
 
 :arrow_up:[Back-to-top](#contents)
 
