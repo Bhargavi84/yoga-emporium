@@ -2,6 +2,7 @@ html {
     height: 100%;
 }
 
+/* Body */
 body {
     background: url('/media/homepage-background-cropped.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -40,20 +41,24 @@ i.fas.fa-blog {
     font-size: 1.5rem;
 }
 
+/* Navbar */
 nav.navbar {
     background: rgb(221, 237, 241);
 
 }
 
+/* Empty bag display */
 .jumbotron {
     background: rgb(221, 237, 241);
 }
 
+/* Product Card */
 .card.mb-4 {
     background: rgb(221, 237, 241);
-    
+
 }
 
+/* Buttons */
 .shop-here-button {
     background: rgb(83, 80, 80);
     color: white;
@@ -103,6 +108,7 @@ nav.navbar {
     background: rgb(83, 80, 80) !important;
 }
 
+/* Background Image Overlay */
 .overlay {
     height: 100%;
     width: 100%;
@@ -305,7 +311,7 @@ input[name='q']::placeholder {
 /* -------------------------------- Footer */
 
 .footer {
-    margin-top:auto;
+    margin-top: auto;
 }
 
 /* -------------------------------- Media Queries */
@@ -319,9 +325,10 @@ input[name='q']::placeholder {
     .card {
         width: 100%;
     }
+
     .footer {
-        margin-top:auto;
-      }
+        margin-top: auto;
+    }
 
 }
 
@@ -339,11 +346,6 @@ input[name='q']::placeholder {
         padding-top: 150px;
     }
 
-    /* Blog side bar */
-
-    .card {
-        box-shadow: 0 16px 48px #E3E7EB;
-    }
 
     h2 {
         margin-top: 45px;
@@ -470,12 +472,14 @@ input[name='q']::placeholder {
 
 }
 
+/* Slightly small screens */
 @media (max-width: 320px) {
 
     .display-5.logo-font.text-black {
         font-size: 1rem;
         padding-top: 10px;
     }
+
     .shop-here-button {
         min-width: 200px;
         margin-top: 10vh;

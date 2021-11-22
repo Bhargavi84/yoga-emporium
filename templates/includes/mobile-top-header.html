@@ -1,4 +1,4 @@
-<!--Below code credits to Code Institute's Boutique Ado project -->
+<!--Search button-->
 <ul>
     <li class="list-inline-item">
         <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown"
@@ -25,6 +25,7 @@
             </form>
         </div>
     </li>
+<!--My account Icon-->
     <li class="list-inline-item dropdown">
         <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
@@ -46,15 +47,17 @@
             {% endif %}
         </div>
     </li>
+<!--Blog/feedback-->
     <li class="list-inline-item">
         <a class="d-block d-lg-none" href="{% url 'feedbacks' %}">
-          <div class="text-center text-dark">
-            <div><i class="fas fa-blog"></i></div>
-            <p class="my-0">Blogs
-            </p>
-          </div>
+            <div class="text-center text-dark">
+                <div><i class="fas fa-blog"></i></div>
+                <p class="my-0">Blogs
+                </p>
+            </div>
         </a>
-      </li>
+    </li>
+<!--Bag-->
     <li class="list-inline-item">
         <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none"
             href="{% url 'view_bag' %}">

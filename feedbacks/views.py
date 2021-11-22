@@ -7,7 +7,7 @@ def feedbacks(request):
     feedbacks = Feedback.objects.filter(status=1).order_by('-created_on')
 
     template = 'feedbacks/feedbacks.html'
-    return render(request, template, {'feedbacks':feedbacks})
+    return render(request, template, {'feedbacks': feedbacks})
 
 
 def comments_details(request, slug):
