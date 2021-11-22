@@ -184,50 +184,37 @@ ___
  * Bag Icon
  * Shop Now button on the mid screen.
  
+*   ### My Account --> Product Management --> Register --> Login
+ * ### Register page
+The register page  feature will help first time user to register to the page and create a login. username field is a string which has to be 4 characters and more, including lower and upper case and any number(alphanemeric)
+User has to enter Email, Email address confirmation, Name, Username, Password and Password again.
+Error message is displayed to enter mandatory fields(if nothing is entered).
+if the user enters wrong username / password the flash message will pop out to alert  user to enter the correct credentials. Clicking the signup button the user will be routed to the All products page and flash message diplays "Signup successfull"
+
+ ### Login page
+The Login page feature will help the user to login to the website. The username field has to be a 4 characters and more, Error message is displayed to enter mandatory fields(if nothing is entered) as "The username and/or password you specified are not correct.. Clicking the sign in button the user will be routed to the user's All products page.
+
  * ### My Profile App -> Update Information 
  My profile page feature will display default delivery infomration, update information button on the page and the order history.
 
 * ### Logout 
 The logout function displays the signout form and confirmation button and cancel button.
 
-* ### Blog App -> Veiw Blog -> Leave a Comment
-The Blog app displays the latest blog entries on the top and readmore button, when read more button is clicked it will take you to comments section and a form "Leave your comment" where users can enter name, email and body of the message and submit button.
+* ### Feedback App -> News -> Leave a Comment
+The News menu displays the latest news on the top and readmore button on that, when read more button is clicked it will route to comments section and a form "Leave your comment" where users can enter name, email and body of the message and post the comment by clicking submit button.
 
 * ### Bag App -> Your bag is empty / Add Products -> Secure Checkout -> Adjust quantity -> Checkout -> Order History -> Confirmation Email 
 * The Bag app will display the grand total, products in the bag if added or just an empty bag information and go to "shop now" button.
 * If you add an product, Message appears on top right corner saying that "the product is added to your bag". Then Secure checkout  option will be on the display where you can click that and go to checkout page.
 * In checkout page will display the grand total of the products added and you can adjust the quantity of the bag manually typing number or num stepper and click on add to bag button.
-* Secure checkout button take you to the Confirm order form (consists of card details cvv and expiry date) and a confirm order button will take you to the order history and confirmation email sent message pop-up is displayed.
-* Order History Page also has a button to go back to "Now checkout the latest deals".
+* Secure checkout button will route to the Confirm order form (consists of card details cvv and expiry date) and a confirm order button will route to the order history page and confirmation email sent message pop-up is displayed.
+* Order History Page also has a button to go back to "Now checkout the latest deals" it routes to the All product page.
 
-* ### Login page
-The Login page feature will help the user to login to the website and if the user enters wrong username / password the flash message will pop out"Incorrect username/password" to alert user to enter the correct credentials. The username field has to be a 5-15 character long string, Error message is displayed to enter mandatory fields(if nothing is entered). Clicking the login button the user will be routed to the user's profile page.There is a link to the Register page, below the login form. Clicking that link the user will be routed to the Register page.
-
-* ### Register page
-The register page  feature will help first time user to register to the page and create a login. username field is a string which has to be 5-15 characters long, including lower and upper case and any number(alphanemeric)
-Error message is displayed to enter mandatory fields(if nothing is entered).
-if the user enters wrong username / password the flash message will pop out to alert  user to enter the correct credentials. Clicking the register button the user will be routed to the user's profile page and flash message diplays "Registration successfull"
-
-* ### Manage Categories
-Manage Categories page feature is only accessible to Admin / Store owner. If clicked on manage categories it will route to get categories page and displays all categories that Admin / Store owner has created. In the category card, there is a category name and two buttons Edit and Delete (for existing categories) and there is Add Category button when clicked which will route the Admin / Store owner to add category page. 
-
-* Clicking on the Edit button the Admin / Store owner will be routed to the Edit category page.
-* Clicking on the Delete button, the confirmation message will pop up with two buttons: Agree and Close.
-* Clicking on Agree button the Category will be deleted from the page and from the database.
-* Clicking on the Close button the confirmation message will be closed and the Admin / Store owner will stay on the same page.
-
-* ### Add Category
-Add Category page feature is only accessible to Admin / Store owner. In the Add category page, the Admin / Store owner can input 3-25 characters long text, and a single button to submit a new category is "Add category". When Admin / Store owner clicks the button, it will be routed to the Manage category page and the new category will be displayed in alphabetical order. Flash message displays "New Category Added" Also, this category will be displayed for users in the add new recipe page, in Choose your category dropdown.
-
-* ### Edit Category
-In the Edit Category page, the Admin / Store owner can edit the text and the final input has to be a 3-25 characters long text. There are two buttons: Cancel and Edit Category.
-
-* Clicking the Cancel button, the Admin / Store owner will be routed back to the Manage Categories page.
-* Clicking Edit button, the newly entered text will be updated and Admin / Store owner will be routed to the manage category page , flash message displays "Category successfully updated" the category card will be displayed in alphabetical order. And also this category will be displayed for users in the add new recipe page, "Choose your category" list.
-
- * Delete category
-The delete button is next to edit button in get categories page.
-when user clicks on this button the message is popped out for confirmation of deletion of the category and the pop up window has two options Agree and Close. when user clicks Agree the category will be deleted and flash message is "Category successfully deleted" when user clicks close, it routes back to Manage Categories page.Only Admin / Store owner can delete categories.
+* ### Product Management
+* Product Management feature is only accessible to Admin / Store owner. If clicked on Product Management it will route to add product page and displays form which has Category, SKU, Name, Description, size, price and Rating. It has 3 buttons, Select Image, Cancel and Add product. When clicked on Select Image button , any image can be added from your local folder,when clicked on cancel it will route to all products page and when clicked on add product it will route to all products page and success message is popped up as "Product added". 
+* Cliking on the product details, it will route to product details page and has edit / delete button, 
+* Clicking on the Edit button the Admin / Store owner will be routed to the Edit product page, and Alert message is popped as "You are editing product name"
+* Clicking on the Delete button, the product is deleted and success message pops up as "Successfully deleted"
 
 * ### Footer
 The footer feature have social media links and copyright information. when clicked the social links opens on the new tab.
