@@ -323,38 +323,54 @@ ___
 
 * ### **Testing user stories**
 
-    * ### Non Registered users
-        * As a guest user to the yoga emporium website, I want to easily navigate through the site, so that I can find the recipe I need that are created by other users of the webiste.
-            * The Home page features has all recipe cards to look in and nav bar which has login and register option.
-        * As a guest user to the yoga emporium website, I want register/log-in functions, so that I can have my own profile created.
-            * The navigation bar has Register option to help user easily understand and register to the website.
-        * As a guest user to the yoga emporium website, I want to use the search panel to find recipes by category name or recipe name or by ingredient.
-            * The search panel is clearly labelled and easily accessible from the Home Page.
-        * As a guest user to the yoga emporium website, I want to see the links to different social media accounts, to contact or follow the website on social media.
-            * The social link are clearly visible on the footer bar and easily accessible all the time.
-    * ### Registered users
-        * As a registered user to the yoga emporium website, I want to easily navigate through the site, so that I can find the recipe I need that are created by other users of the webiste.
-            * The Home page features has all recipe cards to look in and nav bar which has login and register option.
-        * As a registered user to the yoga emporium website, I want to have log-in function, using which in can access my profile.
-            * The navigation bar has Login option to help user easily understand and login to the website.
-        * As a registered user to the yoga emporium website, I want to insert my own recipe and share it with others users from the website.
-            * The navigation bar has New recipe option to help user easily understand add recipe to the website.
-        * As a registered user to the yoga emporium website, I want to edit my recipe if any discripencies.
-            * User can easily access profile page on Nav bar and click on show more button on individual recipe page user can click edit button in which user would like to edit. 
-        * As a registered user to the yoga emporium website, I want to delete my recipe, if I think that I don't want to have this recipe listed.
-            * User can easily access profile page on Nav bar and click on show more button on individual recipe page user can click delete button in which user would like to delete.
-        * As a registered user to the yoga emporium website, I want to have my profile, that I can easily find all the recipes I have added.
-            * Once user creates login user is navigated to uers's profile page which is easily acessible on nav bar.
-        * As a registered user to the yoga emporium website, I want to have a home page where I can view the snapshot of other users' recipes that looks good.
-            * Once the user log into the webpage user can easily access the Home page, which has all recipes displayed.
-        * As a registered user to the yoga emporium website, I want to have a "show more" button on all the recipe snapshots, that shows the complete details of the recipe I am interested in.
-            * Once the user log in to the webpage user can see recipe cards in which each card will have "show more" button which is easily accessible.
-        * As a registered user to the yoga emporium website, I want to use the search panel to find recipes by category name, recipe name and ingredient.
-            * The search panel is clearly labelled and easily accessible from the Home Page.
-        * As a registered user of the website, I want to see social media links, to contact or follow the website on social media.
-            The social link are clearly visible on the footer bar and easily accessible all the time.
-        * As a registered user to the yoga emporium website, I want to get a confirmation message before deleting the recipe.
-            * once user is logged in , on nav bar click on profile, on the individual recipe card click on show more and it route to show recipe page where user can see Edit and Delete buttons, Delete button is easily accessible and clearly labelled.
+* ### Non Registered users
+    *   As a guest user to the yoga emporium website, I want to easily navigate through the site, so that I can search the all the products I need that are
+listed on the website.
+    *   The Home page serves as an entry point to look in and nav bar has all categories of the products on the website, login and
+register option, news page and the shopping bag.
+    *   As a guest user to the yoga emporium website, I want register/log-in functions, so that I can have my own profile created.
+    *The home screen has “My Account” option to help users easily understand and register to the website.
+    *   As a guest user to the yoga emporium website, I want to use the search panel to find products by part or full product name or description.
+    *   The search panel is clearly labelled and easily accessible from the Home Page.
+    *   As a guest user to the yoga emporium website, I want to see the links to different social media accounts, to contact or follow the website on social media.
+    *   The social media links are clearly visible on the footer bar and easily accessible all the time.
+    *   As a guest user to the yoga emporium website, I want to see the news about the latest updates on the yoga and its benefits.
+    *   As a guest user to the yoga emporium website, I want to leave a comment on the new item posted.
+    *   The comment that is posted will “awaiting moderation” by the admin and will be posted on the news page once approved.
+    *   As a guest user to the yoga emporium website, I want to have a shopping bag button. If clicked on the shopping bag it should ask to sign-up/sign-in.
+    *   As a guest user to the yoga emporium website, I want to have the marquee tags on the nav bar to display the latest offers.
+        
+* ### Registered users
+
+    *	As a registered user to the yoga emporium website, I want to easily navigate through the site, so that I can search the all the products I need that are listed on the website.
+    *	The Home page serves as an entry point to look in and nav bar has all categories of the products on the website, login and register option, news page and the shopping bag.
+    *	As a registered user to the yoga emporium website, I want to have log-in function, using which in can access my profile.
+    *	The home screen has “My Account” option to help user easily understand and login to the website.
+    *	As a registered user to the yoga emporium website, I want to search for the products on the website and add it to the shopping bag.
+    *	The navigation bar has shopping bag option to help user easily understand and check what is added in their shopping bag.
+    *	As a registered user to the yoga emporium website, I want to search for the product I want to buy on the website and add it to the shopping bag.
+    *	User can easily access the products based on the categories and sorted by price or rating or categories.
+    *	As a registered user to the yoga emporium website, I want to access the shopping bag and update the quantity or remove the items from the shopping bag.
+    *	User can easily access shopping bag from the Nav bar and update the quantity of the items added.
+    *	As a registered user to the yoga emporium website, I want to securely checkout from the shopping bag.
+    *	Once user adds the items in the shopping bag, they can securely checkout from the shopping bag.
+    *	As a registered user to the yoga emporium website, in the shopping bag, I want to display the remaining amount to shop for getting the free delivery.
+    *	Once the user adds an item to the shopping bag, a message is displayed showing the total amount on the items, the delivery charges and the grand total is displayed and below that a message is displayed showing the remaining amount to shop for getting the free delivery.
+    *	As a registered user to the yoga emporium website, after adding the products, go to checkout page where I can fill out a form to complete the order.
+    *	Once the user goes to the checkout page, user had to fill out the form with the details of delivery with full name, email address, phone number, delivery address with postal code and country.
+    *	As a registered user to the yoga emporium website, after adding the delivery details form, have a checkbox to save the delivery information to my profile, so that I can quickly add these details next time.
+    *	As a registered user of the website, I want to have the option of adding the payment card details with card number, expiry details and CVC number.
+    *	As a registered user to the yoga emporium website, I want to complete the order after adding all the delivery details.
+    *	In this checkout page, there should also be an option to go back and adjust bag and on the right-hand side the order summary to be displayed.
+    *	As a registered user to the yoga emporium website, if you click on the “complete order” without entering the details it should show a toast message to fill the mandatory fields.
+    *	As a registered user to the yoga emporium website, I want to display a toast message on the right top corner of the page when I sign-in.
+    *	As a registered user to the yoga emporium website, I want to display a toast message on the right top corner of the page when I sign-out.
+    *	As a registered user to the yoga emporium website, I want to display a toast message on the right top corner of the page when I adjust the bag.
+    *	As a registered user to the yoga emporium website, I want to display a toast message on the right top corner of the page when an email confirmation is sent for password reset.
+    *	As a registered user to the yoga emporium website, I want to display a toast message on the right top corner of the page when I securely checkout the items added in the shopping bag.
+	
+* ### Admin / Store owners
+        
 
 :arrow_up:[Back-to-top](#contents)
 
@@ -362,7 +378,7 @@ ___
     * ### Manual Testing
 
         * #### Home Page
-            * Navigation Bar :-The Materialize navbar is fixed and is visible across all pages and on all screen size devices and is working as expected and it collapses into a hamburger menu on Tablets and smaller devices.
+            * Navigation Bar :-The  Navbar is fixed and is visible across all pages and on all screen size devices and is working as expected and it collapses into a hamburger menu on Tablets and smaller devices.
             * My Account Menu :- when clicked collapse to My profile and login page (for registered users)as expected,
             when clicked collapse to Register and login page (Non registered users) as expected.
             * Register Menu :- when clicked, Redirects to Register page as expected
