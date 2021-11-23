@@ -61,10 +61,12 @@ nav.navbar {
 
 /* News section */
 
-.card {
+.card-body{
     background: rgb(221, 237, 241);
 
 }
+
+
 
 /* Buttons */
 .shop-here-button {

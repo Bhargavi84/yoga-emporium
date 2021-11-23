@@ -1,6 +1,6 @@
 # **Yoga-Emporium**
 ## Milestone_Project-4_Code-Institute
-![plot](static/images/responsive.png)
+![plot](static/images/home_screen.png)
 ____
 # **About**
 ### 
@@ -122,12 +122,13 @@ They can see  **All PRODUCTS, CLOTHING, ESSENTIALS, SPECIAL OFFERS, SOCIAL MEDIA
 
 ## **Skeleton**
 ### Wireframes
-   *  [Non Registered and Registered User's Wireframe](static/images/wireframes/non-registered-and-registered-user's-wireframe.png)
+   *  [_mobile_](static/images/wireframes/mobile.png)
+   *  [_tablet_](static/images/wireframes/tablet.png)
+   *  [_desktop_](static/images/wireframes/desktop.png)
 
-   * [Admin / Store owner's Wireframe](static/images/wireframes/Admin / Store owner-wireframe.png)
 ### Database-Diagram
 * The diagram below shows the relationship between fields of the existing database collections.
-![plot](static/images/db-diagram.png)
+![plot](static/images/database_schema.png)
 
 ## **Surface**
 ### Background Image
@@ -140,7 +141,7 @@ Below image has been used as background image on the landing page in the project
 ### Font
  * Manrope, san-serif font has been used all over the project.
 
-![plot](static/images/)
+![plot](static/images/homepage_background_cropped.png)
 
 ___
 
@@ -150,8 +151,8 @@ ___
 # **Technologies and Frameworks Used**
 
 * [Python3](https://www.python.org/)
-    * [Jinja](https://jinja.palletsprojects.com/en/3.0.x/) - used  with python for  working of the website
-    * **Django** - Python web framework for building apps.
+* [Jinja](https://jinja.palletsprojects.com/en/3.0.x/) - used  with python for  working of the website
+* **Django** - Python web framework for building apps.
 * **HTML** - used for creating the website.
 * **CSS** - used for styling the website.
 * **Bootstrap** - used to support javascript extensions.
@@ -171,13 +172,13 @@ ___
   ###  Existing Features
  ___
  * ### **Navigation bar**
- The nav bar feature is fixed in desktops and if resized turns into a hamburger icon in mobile and tablet screen and coresponding link will display from left side.
+    The nav bar feature is fixed in desktops and if resized turns into a hamburger icon in mobile and tablet screen and coresponding link will display from left side.
 
  * ### **Home / Landing page** -> Yoga Emporium [logo font]
  
  * The Home page feature have the search panel at the top.
- If user enters a word , it displays the results below the panel it takes data from product name, and description. otherwise it displays a message - '0 Products found for "name you have entered".
- By clicking on "Yoga Emporium" logo Icon retrieves the home page.
+    If user enters a word , it displays the results below the panel it takes data from product name, and description. otherwise it displays a message - '0 Products found for "name you have entered".
+    By clicking on "Yoga Emporium" logo Icon retrieves the home page.
  * Menu - All Products, Clothing, Essetials, Special offers.
  * My Account Icon has profile and logout dropdown.
  * News Icon 
@@ -189,35 +190,36 @@ ___
 *   ### My Account --> Product Management --> Register --> Login
 
 * ### Product Management (only for admin/store owner)
-* Product Management feature is only accessible to Admin / Store owner. If clicked on Product Management it will route to add product page and displays form which has Category, SKU, Name, Description, size, price and Rating. It has 3 buttons, Select Image, Cancel and Add product. When clicked on Select Image button , any image can be added from your local folder,when clicked on cancel it will route to Products page and when clicked on add product it will route to Products page and success message is popped up as "Product added". 
-* Cliking on the product details, it will route to product details page and has edit / delete button, 
-* Clicking on the Edit button the Admin / Store owner will be routed to the Edit product page, and Alert message is popped as "You are editing product name"
-* Clicking on the Delete button, the product is deleted and success message pops up as "Successfully deleted"
+    * Product Management feature is only accessible to Admin / Store owner. If clicked on Product Management it will route to add product page and displays form which has Category, SKU, Name, Description, size, price and Rating. It has 3 buttons, Select Image, Cancel and Add product. When clicked on Select Image button , any image can be added from your local folder,when clicked on cancel it will route to Products page and when clicked on add product it will route to Products page and success message is popped up as "Product added". 
+    * Cliking on the product details, it will route to product details page and has edit / delete button, 
+    * Clicking on the Edit button the Admin / Store owner will be routed to the Edit product page, and Alert message is popped as "You are editing product name"
+    * Clicking on the Delete button, the product is deleted and success message pops up as "Successfully deleted"
 
  * ### Register page
-The register page  feature will help first time user to register to the page and create a login. username field is a string which has to be 4 characters and more, including lower and upper case and any number(alphanemeric)
-User has to enter Email, Email address confirmation, Name, Username, Password and Password again.
-Error message is displayed to enter mandatory fields(if nothing is entered).
-if the user enters wrong username / password the flash message will pop out to alert  user to enter the correct credentials. Clicking the signup button the user will be routed to the Products page and flash message diplays "Signup successfull"
+    * The register page  feature will help first time user to register to the page and create a login. username field is a string which has to be 4 characters and more, including lower and upper case and any number(alphanemeric)
+    
+    * User has to enter Email, Email address confirmation, Name, Username, Password and Password again.
+    Error message is displayed to enter mandatory fields(if nothing is entered).
+    if the user enters wrong username / password the flash message will pop out to alert  user to enter the correct credentials. * Clicking the signup button the user will be routed to the Products page and flash message diplays "Signup successfull"
 
- ### Login page
+ * ### Login page
 The Login page feature will help the user to login to the website. The username field has to be a 4 characters and more, Error message is displayed to enter mandatory fields(if nothing is entered) as "The username and/or password you specified are not correct.. Clicking the sign in button the user will be routed to the Home page.
 
  * ### My Profile -> Update Information 
  My profile page feature will display default delivery infomration form, update information button on the page and the order history. when clicked on Update information button after filling the form, the order is updated and and success message will display and stays on the same page.
  
 * ### Logout 
-The logout function displays the signout form and confirmation button and cancel button. When clicked on the signout button it will be routed to back to Home page.
+  * The logout function displays the signout form and confirmation button and cancel button. When clicked on the signout button it will be routed to back to Home page.
 
 * ### Feedback App -> News -> Leave a Comment
-The News menu displays the latest news from admin / Store owener on the top and readmore button on that it displays name, date,time and the Latest News in a card, when read more button is clicked it will route to comments section and a form "Leave your comment" where users can enter name, email and body of the message and post the comment by clicking submit button. You will see "your message is awaiting approval".
+  * The News menu displays the latest news from admin / Store owener on the top and readmore button on that it displays name, date,time and the Latest News in a card, when read more button is clicked it will route to comments section and a form "Leave your comment" where users can enter name, email and body of the message and post the comment by clicking submit button. You will see "your message is awaiting approval".
 
 * ### Bag App -> Your bag is empty / Add Products -> Secure Checkout -> Adjust quantity -> Checkout -> Order History -> Confirmation Email 
-* The Bag app will display the grand total, products in the bag if added or just an empty bag information and go to "shop now" button. The will be routed to All products age.
-* If you add an product, Bag icon color changes to blue, Message appears on top right corner saying that "the product is added to your bag". Then Secure checkout  option will be on the display where you can click that and go to checkout page.
-* In checkout page will display the grand total of the products added and you can adjust the quantity of the bag manually typing number or num stepper and click on add to bag button.
-* Secure checkout button will route to the Confirm order form (consists of card details cvv and expiry date) and a confirm order button will route to the order history page and confirmation email sent message pop-up is displayed.
-* Order History Page also has a button to go back "Now checkout the latest deals" and it route to the Products page.
+    * The Bag app will display the grand total, products in the bag if added or just an empty bag information and go to "shop now" button. The will be routed to All products age.
+    * If you add an product, Bag icon color changes to blue, Message appears on top right corner saying that "the product is added to your bag". Then Secure checkout  option will be on the display where you can click that and go to checkout page.
+    * In checkout page will display the grand total of the products added and you can adjust the quantity of the bag manually typing number or num stepper and click on add to bag button.
+    * Secure checkout button will route to the Confirm order form (consists of card details cvv and expiry date) and a confirm order button will route to the order history page and confirmation email sent message pop-up is displayed.
+    * Order History Page also has a button to go back "Now checkout the latest deals" and it route to the Products page.
 
 ### All products
 * All products nav item has 4 dropdowns :-
@@ -303,7 +305,7 @@ The footer feature is only displayed on All products page, have social media lin
  ### News app Page :-
  * Adding Images.
  
- <!---News app template name has been changed for the better user experience but it is implemented as feedbacks in the project since the News name suits--->
+ <!---News app template name has been changed for the better user experience but it is implemented as feedbacks in the project since the News name suits the functionalities--->
 
 
   
@@ -440,20 +442,33 @@ register option, news page and the shopping bag.
         " Edit / Delete buttons are also visible on card body of the Individual products.
 
     * ### Defensive design testing
-        * Registration attempt with an existing Username.
 
-        ![plot](static/images/register.png)
+    * **Registration attempt with an existing Username**.
 
-        * Login attempt with an unmatching Username / Password fields.
+        ![plot](static/images/username_existing_error.png)
 
-        ![plot](static/images/login.png)
+
+    * **Login attempt with an unmatching Username / Password fields**.
+
+        ![plot](static/images/incorrect_password_error.png)
 
         
-        * Search results error.
+    * **Search results error**.
+
         ![plot](static/images/search-error.png)
 
+    * **Error in payment process. Always fails with a decline code of insufficient_funds**.
 
-        * Error in payment process. Always fails with a decline code of insufficient_funds.
+        ![plot](static/images/card-error1.png)
+
+    * **Card Invalid**
+
+        ![plot](static/images/card-error.png)
+
+    * **Authentication Error**
+
+        ![plot](static/images/card-error2.png)
+
 
 :arrow_up:[Back-to-top](#contents)
 
@@ -527,7 +542,7 @@ Press Enter , your local clone will be created.
         * Under Properties, turn on static website hosting
         * Under Permissions, paste in the CORS configuration:
 
-        ![plot](static/images/) 
+        ![plot](static/images/cors-config.png) 
 
 * Navigate to bucket policy and select policy generator. This will create a security policy for the bucket.
 * Policy type will be s3 bucket policy, allow all principles by selecting the star. For action select get object.
@@ -553,14 +568,14 @@ Press Enter , your local clone will be created.
 * Add 'storages' to installed apps in settings.py file
 * To connect Django to s3, you'll need to add some parameters in settings.py to tell Django which bucket it is communicating with
 
-![plot](static/images/) 
+![plot](static/images/aws.settings.png) 
 
 * Go to Heroku, in the convig vars, add USE_AWS = True. Add the AWS access key and secret access key
 * Remove disable collectstatic from Heroku config vars
 * Create a file called custom_storages.py
 * In settings.py add the following statements to tell Django where the static files will come form in production
 
-![plot](static/images/) 
+![plot](static/images/aws_staticfiles.png) 
 
 * Then git commit all changes
 
