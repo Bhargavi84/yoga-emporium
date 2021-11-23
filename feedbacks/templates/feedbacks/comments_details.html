@@ -17,10 +17,10 @@
             <div class="card-body">
                 <h6>
                     <a href="{% url 'feedbacks' %}" class="go-back text-black font-weight-bold">
-                        <i class="fas fa-arrow-left"></i>  Go Back to News page <br>
+                        <i class="fas fa-arrow-left"></i> Go Back to News page <br>
                     </a>
                 </h6>
-                <h1>{{ feedback.title }}</h1>
+                <h1 class="title mt-0 ml-0">{{ feedback.title }}</h1>
                 <p class=" text-muted">{{ feedback.author }} | {{ feedback.created_on }}</p>
                 <p class="card-text ">{{ feedback.content | safe }}</p>
 

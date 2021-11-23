@@ -13,12 +13,12 @@
 {% endblock %}
 
 <div class="overlay"></div>
-<div class="container push-down">
+<div class="container">
     <div class="row">
         <!-- Blog Entries Column -->
-        <div class="col mt-3 mb-5">
+        <div class="col-12 my-auto">
             {% for feedback in feedbacks %}
-            <div class="card mb-4">
+            <div class="card">
                 <div class="card-body">
                     <h2 class="card-title">{{ feedback.title }}</h2>
                     <p class="card-text text-muted h6">{{ feedback.author }} | {{ feedback.created_on}} </p>

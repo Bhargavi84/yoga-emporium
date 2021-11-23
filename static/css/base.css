@@ -55,6 +55,14 @@ nav.navbar {
 /* Product Card */
 .card.mb-4 {
     background: rgb(221, 237, 241);
+    margin-top: 100px;
+
+}
+
+/* News section */
+
+.card {
+    background: rgb(221, 237, 241);
 
 }
 
@@ -147,7 +155,6 @@ a.category-badge>span.badge:hover {
 input[name='q']::placeholder {
     color: #aab7c4;
 }
-
 
 
 
@@ -375,6 +382,12 @@ input[name='q']::placeholder {
         margin-top: 85px;
     }
 
+    .card.mb-4 {
+        margin-top: 100px;
+
+    }
+
+
 }
 
 
@@ -441,13 +454,14 @@ input[name='q']::placeholder {
     }
 
     h2 {
-        margin-top: 45px;
+        margin-top: 110px;
         font-weight: bold;
         font-size: 1.5rem;
     }
 
     .card-img-top {
         height: 35vh;
+        margin-top: 100px;
 
     }
 
@@ -466,10 +480,21 @@ input[name='q']::placeholder {
     }
 
     h2.logo-font.mb-6 {
-        margin-top: 85px;
+        margin-top: 160px;
     }
 
+    .card.mb-4 {
+        margin-top: 160px;
 
+    }
+
+    h2.logo-font.mb-4 {
+        margin-top: 145px;
+    }
+
+    .card {
+        margin-top: 60px;
+    }
 }
 
 /* Slightly small screens */
