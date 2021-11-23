@@ -1,10 +1,15 @@
 # **Yoga-Emporium**
 ## Milestone_Project-4_Code-Institute
-![plot](static/images/home_screen.png)
+![plot](static/images/homescreen_desktop.png)
+![plot](static/images/homescreen_mobile.png)
+![plot](static/images/homescreen_tablet.png)
 ____
 # **About**
 ### 
-This is an ultimate E-commerce store for all yoga essentials like Mat, blocks, belts and so on, where users can view the details of products and purchase the products.
+* This is an ultimate e-commerce store for all yoga essentials like Mat, blocks, belts and so on, where users can view the details of products and purchase the products.
+* This e-commerce project is developed using the gitpod IDE and the code is pushed to the github repository. From github, the code is then deployed to Heroku.
+* This project also uses stripe payment solutions for secure payments.
+* This project also loads the statis files from AWS S3 bucket, where the images are stored in .jpg and .png format.
 ____
 
 :point_right:
@@ -114,9 +119,11 @@ ____
 
 * Non Registered users or first time visitors:- can enter the webpage and see all 
 products in Home page in order to see more they are supposed to register.
-They can see  **All PRODUCTS, CLOTHING, ESSENTIALS, SPECIAL OFFERS, SOCIAL MEDIA, MY ACCOUNT,SHOP NOW BUTTON ON SCREEN AND BAG** and other options which will be under the categories on top in desktop devices and in sidenav bar / hamburger menu in mobile phones and tabs.
+They can see  :-
+    * All PRODUCTS, CLOTHING, ESSENTIALS, SPECIAL OFFERS, SOCIAL MEDIA, MY ACCOUNT,SHOP NOW BUTTON ON SCREEN AND BAG and other options which will be under the categories on top in desktop devices and in sidenav bar / hamburger menu in mobile phones and tabs.
 
-* Registered user:- Once registered, users can click on login and enter the webpage. They can see **All PRODUCTS, CLOTHING, ESSENTIALS, SPECIAL OFFERS, SOCIAL MEDIA, MY ACCOUNT - MY PROFILE-LOGOUT, AND BAG**. Users can also look into their profile page and other options which will be under the categories. 
+* Registered user:- Once registered, users can click on login and enter the webpage. They can see :-
+    *  All PRODUCTS, CLOTHING, ESSENTIALS, SPECIAL OFFERS, SOCIAL MEDIA, MY ACCOUNT - MY PROFILE-LOGOUT, AND BAG**. Users can also look into their profile page and other options which will be under the categories. 
 
 * Admin / Store owner :- Admin / Store owner will have access to Product management - edit/delete categories and add, update and delete products.
 
@@ -137,12 +144,9 @@ ___
 Below image has been used as background image on the landing page in the project.
 * Provides the user with a clear and consistent visual structure, which clearly indicates relationships between elements on the screen, improves navigation, and the order of importance of elements that matches user's expectations. 
 * Communicates what user expects, what information or value that users want to get, and considers user capabilities.
-
+![plot](static/images/home_screen.png)
 ### Font
  * Manrope, san-serif font has been used all over the project.
-
-![plot](static/images/homepage_background_cropped.png)
-
 ___
 
 
@@ -323,7 +327,15 @@ ___
     * JSHint (https://jshint.com/)
     * PEP8 online (http://pep8online.com/)
 
-* ### **Testing user stories**
+* ### **Testing user stories**  
+     * [_non-registered_](static/images/testing/registered-users.png)
+     * [_registered_](static/images/testing/non-registered-users.png)
+     * [_store-owner_](static/images/testing/admin_testing1.png)
+     * [_store-owner_](static/images/testing/admin_testing.png)
+     * [_store-owner_](static/images/testing/product-management.png)
+     * [_store-owner_](static/images/testing/add_product.png)
+
+
 
 * ### Non Registered users
     *   As a guest user to the yoga emporium website, I want to easily navigate through the site, so that I can search the all the products I need that are
@@ -341,7 +353,8 @@ register option, news page and the shopping bag.
     *   The comment that is posted will “awaiting moderation” by the admin and will be posted on the news page once approved.
     *   As a guest user to the yoga emporium website, I want to have a shopping bag button. If clicked on the shopping bag it should ask to sign-up/sign-in.
     *   As a guest user to the yoga emporium website, I want to have the marquee tags on the nav bar to display the latest offers.
-        
+
+
 * ### Registered users
 
     *	As a registered user to the yoga emporium website, I want to easily navigate through the site, so that I can search the all the products I need that are listed on the website.
@@ -370,8 +383,17 @@ register option, news page and the shopping bag.
     *	As a registered user to the yoga emporium website, I want to display a toast message on the right top corner of the page when I adjust the bag.
     *	As a registered user to the yoga emporium website, I want to display a toast message on the right top corner of the page when an email confirmation is sent for password reset.
     *	As a registered user to the yoga emporium website, I want to display a toast message on the right top corner of the page when I securely checkout the items added in the shopping bag.
-	
-* ### Admin / Store owners
+
+
+* ### Admin User / Store owners
+        
+    *	As a admin / store owner user of the yoga emporium website, I want to have access to administrate the whole website.
+    *   As a admin / store owner user of the yoga emporium website, I want to add categories and products and update or delete them as and when required.
+    *   As a admin / store owner user of the yoga emporium website, I want to add news items on the website.
+    *   As a admin / store owner user of the yoga emporium website, I want to moderate the comments entered by the users on the news items.
+    *   As a admin / store owner user of the yoga emporium website, I want to administer the users and groups on the website.
+    *   As a admin / store owner user of the yoga emporium website, I want to administer the email addresses of the users on the website.
+    *   As a admin / store owner user of the yoga emporium website, I want to view and update the order history on the website.
         
 
 :arrow_up:[Back-to-top](#contents)
@@ -417,7 +439,7 @@ register option, news page and the shopping bag.
             * Clicking on Read more buttons route to Comments Page. Latest comments will be displayed under the latest news and a comment form below. works as expected.
             * Clicking on submit button in leave a comment form will post the comment and message is displayed on screen saying awaiting approval.
             * Clicking on Go back to  News page will route back to News page.
-            **All above fields of Edit recipe works as expected**.
+            **All above fields works as expected**.
 
         * #### Bag page of user's profile.
             * Clicking on the Bag menu, will displays the products in the bag.
@@ -565,10 +587,10 @@ Press Enter , your local clone will be created.
 * pip3 install django-storages
 * Freeze requirements.txt
 * pip3 freeze > requirements.txt
-* Add 'storages' to installed apps in settings.py file
-* To connect Django to s3, you'll need to add some parameters in settings.py to tell Django which bucket it is communicating with
+* Add 'storages' to installed apps in settings file
+* To connect Django to s3, you'll need to add some parameters in settings to tell Django which bucket it is communicating with
 
-![plot](static/images/aws.settings.png) 
+![plot](static/images/aws_settings.png) 
 
 * Go to Heroku, in the convig vars, add USE_AWS = True. Add the AWS access key and secret access key
 * Remove disable collectstatic from Heroku config vars
