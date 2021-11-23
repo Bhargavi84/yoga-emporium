@@ -9,7 +9,7 @@ ____
 * This is an ultimate e-commerce store for all yoga essentials like Mat, blocks, belts and so on, where users can view the details of products and purchase the products.
 * This e-commerce project is developed using the gitpod IDE and the code is pushed to the github repository. From github, the code is then deployed to Heroku.
 * This project also uses stripe payment solutions for secure payments.
-* This project also loads the statis files from AWS S3 bucket, where the images are stored in .jpg and .png format.
+* This project also loads the static files from AWS S3 bucket, where the images are stored in .jpg and .png format.
 ____
 
 :point_right:
@@ -27,7 +27,7 @@ ____
 * [Technologies](#technologies-used) 
 * [Features](#features) 
 * [Testing](#testing)
-    * [Code Vaidity](#code-validity)
+    * [Code Validity](#code-validity)
     * [Testing User Stories](#testing-user-stories)
     * [Functionality testing](#functionality-testing)
     * [Usability Testing](#usability-testing)
@@ -44,14 +44,14 @@ ____
 * The ideal user of this e-commerce site would be yoga participants or yoga lovers, users who wants to do yoga practice, users who can read and write in English. The user who wants to buy comfortable clothes for exercise, or simply use it for daily wear.
 ### Visitors to this website are searching for:-
 
-* The website users searching for the available products. They found the attractive images or products with less price with Or otherwise, they want to buy the products for necessity.
+* The website users searching for the available products. They found the attractive images or products with less price with or otherwise, they want to buy the products for necessity.
 
 * Easily view total of my purchases anytime so that spending too much can be avoided.
 ## **User stories - guest users/non-registered users**
 *   As a guest user to yoga emporium website, I want to easily navigate through the site, so that I can find the products which I need for my yoga practice, which can also be sorted by category, size, price, names and rating.
 *   As a guest user to the yoga emporium website, I want register functions, so that I can have my own profile created.
 *   As a guest user to the yoga emporium website, I want to use the search panel to find products by category or description.
-*   As a guest user to the yoga emporium website, I want to see the links to different social media accounts, to contact or follow the website for more informations on social media.
+*   As a guest user to the yoga emporium website, I want to see the links to different social media accounts, to contact or follow the website for more information on social media.
 ## **User stories - registered users**
 *   As a registered user to the yoga emporium website, I want to easily navigate through the site, so that I can find the products I need that will be suitable for my yoga practice.
 *   As a registered user to the yoga emporium website, I want to have log-in /log-out function, using which I can access my account information/profile , contents of bag and order information.
@@ -80,7 +80,7 @@ ____
 *   As a shopper, I can sort the list available products, so that I can easily find the best rated and priced and categorically sorted products.
 *   As a shopper, If I sort a specific category of product, so that I can find the best rated and priced product in a specific category or sort products in that category by name.
 *   As a shopper, sort multiple categories of product simultaneously so that I can find the best priced or best- rated products categories such as "clothing" or "homeware" 
-*   As a shopper, I can search products by name or description so that I can find specific product i would like to purchase.
+*   As a shopper, I can search products by name or description so that I can find specific product I would like to purchase.
 *   As a shopper, I can easily see what I have searched for and the number of results, so that I can quickly decide whether the product I want is available.
 *   As a shopper, I can easily select the size and quantity of a product when purchasing it so that I don't accidentally select wrong product quantity size.
 *   As a shopper, I easily view items in my bag to be purchased, so that I can identify the total cost of my purchase and all items I will receive. 
@@ -109,7 +109,7 @@ ____
 
 ## **Scope**
 * To create a website where the transactions would be handled electronically or online – e-commerce facilitates all the various shopping-related activities, including the purchase and sales of products and services, shipping, billing, etc. will be online.
-* The website has been divided into different section so that users can easily look into that and the infomation are easy and understandable way so that  they can login/signup, signout, add to bag, secure checkout, email confirmation, update profile/order information, remove products from bag and save the order history very easily.
+* The website has been divided into different section so that users can easily look into that and the information are easy and understandable way so that  they can login/signup, signout, add to bag, secure checkout, email confirmation, update profile/order information, remove products from bag and save the order history very easily.
 
 ## **Structure**
 * This  website is e-commerce website that contains three sections.
@@ -120,7 +120,7 @@ ____
 * Non Registered users or first time visitors:- can enter the webpage and see all 
 products in Home page in order to see more they are supposed to register.
 They can see  :-
-    * All PRODUCTS, CLOTHING, ESSENTIALS, SPECIAL OFFERS, SOCIAL MEDIA, MY ACCOUNT,SHOP NOW BUTTON ON SCREEN AND BAG and other options which will be under the categories on top in desktop devices and in sidenav bar / hamburger menu in mobile phones and tabs.
+    * All PRODUCTS, CLOTHING, ESSENTIALS, SPECIAL OFFERS, SOCIAL MEDIA, MY ACCOUNT,SHOP NOW BUTTON ON SCREEN AND BAG and other options which will be under the categories on top in desktop devices and in hamburger menu in mobile phones and tabs.
 
 * Registered user:- Once registered, users can click on login and enter the webpage. They can see :-
     *  All PRODUCTS, CLOTHING, ESSENTIALS, SPECIAL OFFERS, SOCIAL MEDIA, MY ACCOUNT - MY PROFILE-LOGOUT, AND BAG**. Users can also look into their profile page and other options which will be under the categories. 
@@ -176,14 +176,14 @@ ___
   ###  Existing Features
  ___
  * ### **Navigation bar**
-    The nav bar feature is fixed in desktops and if resized turns into a hamburger icon in mobile and tablet screen and coresponding link will display from left side.
+    The nav bar feature is fixed in desktops and if resized turns into a hamburger icon in mobile and tablet screen and corresponding link will display from left side.
 
  * ### **Home / Landing page** -> Yoga Emporium [logo font]
  
  * The Home page feature have the search panel at the top.
     If user enters a word , it displays the results below the panel it takes data from product name, and description. otherwise it displays a message - '0 Products found for "name you have entered".
     By clicking on "Yoga Emporium" logo Icon retrieves the home page.
- * Menu - All Products, Clothing, Essetials, Special offers.
+ * Menu - All Products, Clothing, Essentials, Special offers.
  * My Account Icon has profile and logout dropdown.
  * News Icon 
  * Bag Icon
@@ -194,29 +194,29 @@ ___
 *   ### My Account --> Product Management --> Register --> Login
 
 * ### Product Management (only for admin/store owner)
-    * Product Management feature is only accessible to Admin / Store owner. If clicked on Product Management it will route to add product page and displays form which has Category, SKU, Name, Description, size, price and Rating. It has 3 buttons, Select Image, Cancel and Add product. When clicked on Select Image button , any image can be added from your local folder,when clicked on cancel it will route to Products page and when clicked on add product it will route to Products page and success message is popped up as "Product added". 
-    * Cliking on the product details, it will route to product details page and has edit / delete button, 
+    * Product Management feature is only accessible to Admin / Store owner. If clicked on Product Management it will route to add product page and displays form which has Category, SKU, Name, Description, size, price and Rating. It has 3 buttons, Select Image, Cancel and Add product. When clicked on Select Image button , any image can be added from your local folder, when clicked on cancel it will route to Products page and when clicked on add product it will route to Products page and success message is popped up as "Product added". 
+    * Clicking on the product details, it will route to product details page and has edit / delete button, 
     * Clicking on the Edit button the Admin / Store owner will be routed to the Edit product page, and Alert message is popped as "You are editing product name"
     * Clicking on the Delete button, the product is deleted and success message pops up as "Successfully deleted"
 
  * ### Register page
-    * The register page  feature will help first time user to register to the page and create a login. username field is a string which has to be 4 characters and more, including lower and upper case and any number(alphanemeric)
+    * The register page  feature will help first time user to register to the page and create a login. username field is a string which has to be 4 characters and more, including lower and upper case and any number(alphanumeric)
     
     * User has to enter Email, Email address confirmation, Name, Username, Password and Password again.
     Error message is displayed to enter mandatory fields(if nothing is entered).
-    if the user enters wrong username / password the flash message will pop out to alert  user to enter the correct credentials. * Clicking the signup button the user will be routed to the Products page and flash message diplays "Signup successfull"
+    if the user enters wrong username / password the flash message will pop out to alert  user to enter the correct credentials. * Clicking the signup button the user will be routed to the Products page and flash message displays "Signup successful"
 
  * ### Login page
 The Login page feature will help the user to login to the website. The username field has to be a 4 characters and more, Error message is displayed to enter mandatory fields(if nothing is entered) as "The username and/or password you specified are not correct.. Clicking the sign in button the user will be routed to the Home page.
 
  * ### My Profile -> Update Information 
- My profile page feature will display default delivery infomration form, update information button on the page and the order history. when clicked on Update information button after filling the form, the order is updated and and success message will display and stays on the same page.
+ My profile page feature will display default delivery information form, update information button on the page and the order history. when clicked on Update information button after filling the form, the order is updated and and success message will display and stays on the same page.
  
 * ### Logout 
   * The logout function displays the signout form and confirmation button and cancel button. When clicked on the signout button it will be routed to back to Home page.
 
 * ### Feedback App -> News -> Leave a Comment
-  * The News menu displays the latest news from admin / Store owener on the top and readmore button on that it displays name, date,time and the Latest News in a card, when read more button is clicked it will route to comments section and a form "Leave your comment" where users can enter name, email and body of the message and post the comment by clicking submit button. You will see "your message is awaiting approval".
+  * The News menu displays the latest news from admin / Store owner on the top and readmore button on that it displays name, date,time and the Latest News in a card, when read more button is clicked it will route to comments section and a form "Leave your comment" where users can enter name, email and body of the message and post the comment by clicking submit button. You will see "your message is awaiting approval".
 
 * ### Bag App -> Your bag is empty / Add Products -> Secure Checkout -> Adjust quantity -> Checkout -> Order History -> Confirmation Email 
     * The Bag app will display the grand total, products in the bag if added or just an empty bag information and go to "shop now" button. The will be routed to All products age.
@@ -233,12 +233,12 @@ The Login page feature will help the user to login to the website. The username 
     Also has hover button on the top to display which category you are viewing.
     * By Category :- When clicked, it will sort alphabetically (category) and displays on the screen.
     Also has hover button on the top to display which category you are viewing.
-    * All Products :- When clicked, it will sort alpabetically (product name) and displays on the screen.
+    * All Products :- When clicked, it will sort alphabetically (product name) and displays on the screen.
     This feature also have all 3 categories hover button on the top to swap the category.
 
 ### Clothing
  * Clothing nav item has 4 dropdowns :-
-    * Acivewear :- When clicked , it will sort the products category Activewear and displays on the screen.
+    * Activewear :- When clicked , it will sort the products category Activewear and displays on the screen.
     Also has hover button on the top to display which category you are viewing.
     * Pants :- When clicked, it will sort the products category Pants and displays on the screen.
     Also has hover button on the top to display which category you are viewing.
@@ -248,7 +248,7 @@ The Login page feature will help the user to login to the website. The username 
      This feature also have all 3 categories hover button on the top to swap the category.
 
 ### Essentials
- * Essentails nav item has 3  dropdowns :-
+    * Essentials nav item has 3  dropdowns :-
     * Mats and Blocks :- When clicked , it will sort the products by category Mats and Blocks and displays on the screen.
     Also has hover button on the top to display which category you are viewing.
     * Antiques and Idols :- When clicked, it will sort the products by category Antiques and Idols and displays on the screen.
@@ -257,7 +257,7 @@ The Login page feature will help the user to login to the website. The username 
      This feature also have all 3 categories hover button on the top to swap the category.
 
 ### Special Offers
- * Speacial Offers nav item has 4 dropdowns :-
+    * Special Offers nav item has 4 dropdowns :-
     * New Arrival :- When clicked , it will sort the products category New arrival and displays on the screen.
     Also has hover button on the top to display which category you are viewing.
     * Deals :- When clicked, it will sort the products category Deals and displays on the screen.
@@ -296,7 +296,7 @@ The footer feature is only displayed on All products page, have social media lin
 ### Features left to Implement
 
  ### Home app Page :- 
-* Carosel Images.
+* Carousel Images.
 * Contact Form.
 * Home page LOGO.
 
@@ -410,19 +410,19 @@ register option, news page and the shopping bag.
             * All Products :- when clicked, collapse to - by category, by price, by rating and all products, works as expected
             * Clothing :- when clicked, collapse to Activewear, Pants, Shirts and All clothing, works as expected.
             * Clothing :- when clicked, collapse to Mats -Blocks, Antiques-Idols and others, works as expected.
-            * Special Offers :- when clicked, collapse to New arrvals, Deals, Clearance and all special, works as expected.
+            * Special Offers :- when clicked, collapse to New arrivals, Deals, Clearance and all special, works as expected.
             * News Menu :- when clicked, it route to new page.
             * Bag Menu
             * Footer :-The footer is relative and transparent background visible on Home page. It consists of four social links. When clicked on social links it opens in a new tab of respective social link, works as expected.
             * Search button :-Tried and tested by giving input Product name category name and Descriptions
-            when typed non existing Products it displays as "0 results found". Clicking on the Search button without entering any value - Error alert "You didnt enter any search criteria" is Popped up, prompting users to enter a value, works as expected.
+            when typed non existing Products it displays as "0 results found". Clicking on the Search button without entering any value - Error alert "You didn't enter any search criteria" is Popped up, prompting users to enter a value, works as expected.
             * Shop Now button on screen :- when clicked route to products page, works as expected.
             * Bag Menu :- when clicked route to users bag and displays product which is added. Or just an empty bag information.works as expected.
 
         * #### Profile Page
             * Clicking on the navigation bar's Profile link has been routed to the user's profile page, works as expected.
-            * Clicking on Profile page, Dafault delivery information and order history is displayed.
-                * Update Information button :- Updates information after entering the order form and success alert pops up and stays in the same page.works as expected.
+            * Clicking on Profile page, Default delivery information and order history is displayed.
+                * Update Information button :- Updates information after entering the order form and success alert pops up and stays in the same page, works as expected.
 
         * #### Logout page
             * Clicking on the navigation bar's logout  link has been route to the logout confirmation page.
@@ -431,7 +431,7 @@ register option, news page and the shopping bag.
                 Logout page works as expected.
 
         * #### Login page 
-            * Clicking on Login page, route to sign-in page form to enter details. If entries are wrong, error is displayed "The username and/or password you specified are not correct" if entries are correct it will route to Home page Alert Success alert is displayed saying "Successfully signed in as Username".works as expected.
+            * Clicking on Login page, route to sign-in page form to enter details. If entries are wrong, error is displayed "The username and/or password you specified are not correct" if entries are correct it will route to Home page Alert Success alert is displayed saying "Successfully signed in as Username", works as expected.
 
 
         * #### News page.
@@ -443,7 +443,7 @@ register option, news page and the shopping bag.
 
         * #### Bag page of user's profile.
             * Clicking on the Bag menu, will displays the products in the bag.
-            * Clicking on the add to bag menu, the producta will be add for checkout.
+            * Clicking on the add to bag menu, the products will be add for checkout.
             * Clicking on keep shopping button route back to products page.
                 * ### Secure checkout page
                 * Clicking on secure checkout button leads to shopping bag page and users can adjust the bag , size(if any)
