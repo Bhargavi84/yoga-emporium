@@ -225,8 +225,8 @@ The Login page feature will help the user to login to the website. The username 
     * Secure checkout button will route to the Confirm order form (consists of card details cvv and expiry date) and a confirm order button will route to the order history page and confirmation email sent message pop-up is displayed.
     * Order History Page also has a button to go back "Now checkout the latest deals" and it route to the Products page.
 
-### All products
-* All products nav item has 4 dropdowns :-
+* ### All products
+    * All products nav item has 4 dropdowns :-
     * By price :- When clicked , it will sort the products by price in asc order and displays on the screen.
     Also has hover button on the top to display which category you are viewing.
     * By Rating :- When clicked, it will sort the products by rating in desc order and displays on the screen.
@@ -236,8 +236,8 @@ The Login page feature will help the user to login to the website. The username 
     * All Products :- When clicked, it will sort alphabetically (product name) and displays on the screen.
     This feature also have all 3 categories hover button on the top to swap the category.
 
-### Clothing
- * Clothing nav item has 4 dropdowns :-
+* ### Clothing
+    * Clothing nav item has 4 dropdowns :-
     * Activewear :- When clicked , it will sort the products category Activewear and displays on the screen.
     Also has hover button on the top to display which category you are viewing.
     * Pants :- When clicked, it will sort the products category Pants and displays on the screen.
@@ -247,7 +247,8 @@ The Login page feature will help the user to login to the website. The username 
     * All clothing :- When clicked, it will sort Activewear, Pants and Shirts and displays on the screen.
      This feature also have all 3 categories hover button on the top to swap the category.
 
-### Essentials
+* ### Essentials
+
     * Essentials nav item has 3  dropdowns :-
     * Mats and Blocks :- When clicked , it will sort the products by category Mats and Blocks and displays on the screen.
     Also has hover button on the top to display which category you are viewing.
@@ -256,7 +257,7 @@ The Login page feature will help the user to login to the website. The username 
     * Other :- When clicked, it will sort products category Mats&Blocks, Antiques&Idols and displays on the screen.
      This feature also have all 3 categories hover button on the top to swap the category.
 
-### Special Offers
+* ### Special Offers
     * Special Offers nav item has 4 dropdowns :-
     * New Arrival :- When clicked , it will sort the products category New arrival and displays on the screen.
     Also has hover button on the top to display which category you are viewing.
@@ -267,11 +268,11 @@ The Login page feature will help the user to login to the website. The username 
     * All specials :- When clicked, it will sort New arrival, Deals, Clearance and All specials and displays on the screen.
      This feature also have all 3 categories hover button on the top to swap the category.
 
-### Delivery Banner
-* This Delivery banner is set on the top of screen and will be visible all time at the top. 'Marquee' element tag has been implemented to the sentence.
+* ### Delivery Banner
+    * This Delivery banner is set on the top of screen and will be visible all time at the top. 'Marquee' element tag has been implemented to the sentence.
 
-### Sort by scroll bar
-* Sorting feature has been implement as below.
+* ### Sort by scroll bar
+    * Sorting feature has been implement as below.
     * Price (low to high)
     * Price(high to low)
     * Rating(low to high)
@@ -282,32 +283,32 @@ The Login page feature will help the user to login to the website. The username 
     * Category(Z-A)
 
 
-### SHOP NOW Button
-*   The shop now button on the screen, when clicked route to Products page. Shoppers can easily navigate to Products page.
+* ### SHOP NOW Button
+    *  The shop now button on the screen, when clicked route to Products page. Shoppers can easily navigate to Products page.
 
-### Footer
-The footer feature is only displayed on All products page, have social media links and copyright information. when clicked the social links opens in the new tab.
+* ### Footer
+    The footer feature is only displayed on All products page, have social media links and copyright information. when clicked the social links opens in the new tab.
 
-### Other Features 
-* Nav bar is a container fluid and will stick to the top at all time.
-* Overlay effect has been implemented to other pages to overlay the background Image which will be visible all the time on the home page.
+* ### Other Features 
+    * Nav bar is a container fluid and will stick to the top at all time.
+    * Overlay effect has been implemented to other pages to overlay the background Image which will be visible all the time on the home page.
 
 
-### Features left to Implement
+* ### Features left to Implement
 
- ### Home app Page :- 
-* Carousel Images.
-* Contact Form.
-* Home page LOGO.
+* ### Home app Page :- 
+    * Carousel Images.
+    * Contact Form.
+    * Home page LOGO.
 
- ### Product app page :-
-* Discount coupons logic on purchasing over 50$.
+ * ### Product app page :-
+    * Discount coupons logic on purchasing over 50$.
 
- ### Product Management :-
- * Confirmation message modal before deleting the product(Admin/Superuser).
+ * ### Product Management :-
+    * Confirmation message modal before deleting the product(Admin/Superuser).
 
- ### News app Page :-
- * Adding Images.
+ * ### News app Page :-
+    * Adding Images.
  
  <!---News app template name has been changed for the better user experience but it is implemented as feedbacks in the project since the News name suits the functionalities--->
 
@@ -456,7 +457,7 @@ register option, news page and the shopping bag.
 
             **All above fields of Bag app works as expected**.
 
-        ### Functionality testing for Admin / Store Owner
+        * ### Functionality testing for Admin / Store Owner
         * **Product Management** : Clicking on Product management under My account menu will route to add product page, where admin or store owner can add product by filling out the product details and clicking on add product. Success alert is displayed saying "Successfully added product" with noimage as default.
         * **Edit product** : Clicking on edit button under the product detail page will route to product management page.
         Image remove is also working as expected. Clicking Update product will route back to product detail page and Success message alert saying "Successfully updated product" cancel button route back to products page.
@@ -511,19 +512,19 @@ register option, news page and the shopping bag.
 
 
 
-# **Deployment**
+* # **Deployment**
 * This website is developed by using Gitpod workspace and GitHub repository to commit and push changes. This project uses GitHub for hosting and has been deployed using Heroku and also Amazon S3 for storing the media files.
 
 * Following steps can be used to access the page :-
 
 
-### **Download**
+* ### **Download**
 * Git hub navigate to https://github.com/Bhargavi84/yoga-emporium
 * Click the **Code** button.
 * Click the **Download Zip**.
 * Extract 
 
-### **Clone Repository**
+* ### **Clone Repository**
 
 * GitHub navigate to https://github.com/Bhargavi84/yoga-emporium
 * Click the Code button.
@@ -533,7 +534,7 @@ register option, news page and the shopping bag.
 * Type git clone than paste the copied URL git clone https://github.com/Bhargavi84/yoga-emporium.git
 Press Enter , your local clone will be created.
 
-### **Deployment to Heroku**
+* ### **Deployment to Heroku**
 * **Set up workspace for Heroku**:
 
     * In the terminal window of IDE, create a requirements.txt file to store all applications and dependencies required to run the project.
@@ -611,7 +612,7 @@ Press Enter , your local clone will be created.
     * Click on the Settings  and select Config Vars and Reveal Config Vars.
     * Add the following variables.
 
-    ![plot](static/images/)
+    ![plot](static/images/heroku-config-var.png)
 
 * Now go back to Heroku and click on Enable Automatic Deployment and Deploy Branch.
 
@@ -632,9 +633,6 @@ Press Enter , your local clone will be created.
 
 * SQLite, by Django has been used for development. Heroku Postgres has been used for production. Amazon Web Services (AWS) has been used to host all my static and media files.
 
-### **Database Structure**
-
-![plot](static/images/)
 
 :arrow_up:[Back-to-top](#contents)
 
